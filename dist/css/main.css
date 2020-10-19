@@ -313,7 +313,6 @@ nav button:hover {
 
 .wr-introduction {
   height: 100vh;
-  width: 100%;
   background: url("../media/img/top-background.png") no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -334,11 +333,11 @@ nav button:hover {
   margin-bottom: 17px;
 }
 
-.wr-slogan h2.first-line {
+.wr-slogan h2.first-slogan {
   margin-right: 63px;
 }
 
-.wr-slogan h2.second-line {
+.wr-slogan h2.second-slogan {
   margin-right: -7px;
 }
 
@@ -352,7 +351,7 @@ nav button:hover {
   top: -73px;
 }
 
-.about-yoga {
+.wr-about-yoga .custom-container {
   display: flex;
   justify-content: space-between;
 }
