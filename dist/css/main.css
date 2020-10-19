@@ -1,0 +1,611 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+.custom-container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "Poppins Medium";
+  src: local("Poppins Medium"), local("Poppins-Medium"), url("../fonts/poppins-medium-webfont.woff2") format("woff2"), url("../fonts/poppins-medium-webfont.woff") format("woff"), url("../fonts/Poppins-Medium.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins Light";
+  src: local("Poppins Light"), local("Poppins-Light"), url("../fonts/poppins-light-webfont.woff2") format("woff2"), url("../fonts/poppins-light-webfont.woff") format("woff"), url("../fonts/Poppins-Light.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: local("Poppins Semibold"), local("Poppins-Semi-Bold"), url("../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../fonts/poppins-semibold-webfont.woff") format("woff"), url("../fonts/Poppins-SemiBold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: local("Poppins Bold"), local("Poppins-Bold"), url("../fonts/poppins-bold-webfont.woff2") format("woff2"), url("../fonts/poppins-bold-webfont.woff") format("woff"), url("../fonts/Poppins-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Lato Italic";
+  src: local("Lato Italic"), local("Lato-Italic"), url("../fonts/lato-italic-webfont.woff2") format("woff2"), url("../fonts/lato-italic-webfont.woff") format("woff"), url("../fonts/Lato-Italic.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins Regular";
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-bold-webfont.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("opentype");
+}
+
+header {
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+header.sticky {
+  padding: 0 60px;
+  background-color: #edf1f7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: #99aade;
+}
+
+nav a:hover,
+nav a:active {
+  color: #7492ec;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 27px;
+}
+
+nav img {
+  max-width: 60px;
+  width: 100%;
+  max-height: 63px;
+}
+
+nav button {
+  width: 198px;
+  height: 40px;
+  border: solid 1px transparent;
+  background-color: #7492ec;
+  color: #fff;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-family: "Poppins Regular", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+nav button:hover {
+  background-color: #99aade;
+  transition: 0.2s ease;
+}
+
+.wr-introduction {
+  height: 100vh;
+  width: 100%;
+  background: url("../media/img/top-background.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.wr-slogan {
+  padding-top: 15vh;
+}
+
+.wr-slogan h2 {
+  font-family: "Poppins Light", sans-serif;
+  font-size: 72px;
+  font-weight: 100;
+  color: #6a8eec;
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 17px;
+}
+
+.wr-slogan h2.first-line {
+  margin-right: 63px;
+}
+
+.wr-slogan h2.second-line {
+  margin-right: -7px;
+}
+
+.wr-about-yoga {
+  background: url("../media/img/bg-object.png") no-repeat;
+  background-position: right -5px;
+  background-size: contain;
+  padding-top: 30px;
+  padding-bottom: 48px;
+  position: relative;
+  top: -73px;
+}
+
+.about-yoga {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wr-description {
+  max-width: 570px;
+  padding-top: 142px;
+}
+
+.wr-description h1 {
+  font-family: "Poppins Light", sans-serif;
+  font-size: 48px;
+  color: #7492ec;
+  font-weight: 100;
+  margin-bottom: 8px;
+}
+
+.wr-description p {
+  font-family: "Lato Regular", serif;
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 3px;
+  margin-bottom: 42px;
+}
+
+.video-container {
+  width: 570px;
+  height: 350px;
+  border: solid 1px transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.video-container video {
+  height: 100%;
+  width: 100%;
+}
+
+.video-container video[poster] {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.icon-container {
+  min-width: 70px;
+  min-height: 70px;
+  border: 2px solid #7492ec;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-description-box {
+  max-width: 374px;
+}
+
+.benefit-description-box p {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.benefit-description-box h4 {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.benefit-item-box {
+  display: flex;
+  margin-bottom: 52px;
+  align-items: center;
+}
+
+.wr-classes {
+  background-image: url("../media/img/bg-classes.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: #7492ec;
+  position: relative;
+}
+
+.wr-classes .custom-container {
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background-image: url("../media/img/bg-classes-object.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.wr-classes h3 {
+  font-family: "Poppins Light", sans-serif;
+  font-size: 48px;
+  color: #7492ec;
+  font-weight: 100;
+  margin-bottom: 8px;
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+.wr-classes .swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  max-width: 270px;
+}
+
+.swiper-slide .img-container {
+  width: 270px;
+  height: 200px;
+  border-radius: 5px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.swiper-slide img.first-pic {
+  margin-left: -29px;
+  margin-top: -29px;
+}
+
+.swiper-slide img.second-pic {
+  margin-left: -25px;
+  margin-top: -5px;
+}
+
+.swiper-slide img.third-pic {
+  margin-left: -21px;
+  margin-top: -38px;
+}
+
+.swiper-slide img.fourth-pic {
+  margin-left: -18px;
+}
+
+.wr-img {
+  display: block;
+}
+
+.wr-img::before {
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.wr-img:hover::before {
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+
+.class-name {
+  display: block;
+  height: 46px;
+  margin-bottom: 13px;
+}
+
+.class-name:hover h5 {
+  color: #7492ec;
+}
+
+h5 {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #99aade;
+  line-height: 23px;
+}
+
+p {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.class-description {
+  font-size: 14PX;
+  color: #666;
+  line-height: 24px;
+}
+
+.detailes {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.detailes svg {
+  margin-right: 12px;
+}
+
+.clock {
+  width: 12px;
+  height: 12px;
+  fill: #7492ec;
+}
+
+.teacher {
+  width: 12px;
+  height: 14px;
+  fill: #7492ec;
+}
+
+.level {
+  width: 12px;
+  height: 13px;
+  fill: #7492ec;
+}
+
+.btn-left,
+.btn-right {
+  width: 9px;
+  height: 14px;
+  fill: #7492ec;
+}
+
+.swiper-button-right {
+  position: absolute;
+  top: 330px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.swiper-button-left {
+  position: absolute;
+  top: 330px;
+  left: 40px;
+  cursor: pointer;
+}
+
+.swiper-button-right:active,
+.swiper-button-right:focus,
+.swiper-button-left:active,
+.swiper-button-left:focus {
+  outline: none;
+}
+
+@media all and (orientation: landscape), all and (max-height: 700px) {
+  .wr-slogan {
+    padding-top: 5vh;
+  }
+}

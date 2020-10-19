@@ -1,0 +1,35 @@
+$main-color: #7492ec;
+$link-color: #99aade;
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+.custom-container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0px;
+}

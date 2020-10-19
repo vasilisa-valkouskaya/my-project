@@ -1,0 +1,280 @@
+@import "normalize";
+@import "settings";
+@import "fonts";
+@import "header";
+.wr-introduction {
+    height: 100vh;
+    width: 100%;
+    background: url("../media/img/top-background.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.wr-slogan {
+    padding-top: 15vh;
+    @media all and (orientation: landscape), all and (max-height: 700px) {
+        padding-top: 5vh;
+    }
+    h2 {
+        font-family: "Poppins Light", sans-serif;
+        font-size: 72px;
+        font-weight: 100;
+        color: #6a8eec;
+        text-align: right;
+        margin-top: 0px;
+        margin-bottom: 17px;
+    }
+    h2.first-line {
+        margin-right: 63px;
+    }
+    h2.second-line {
+        margin-right: -7px;
+    }
+}
+
+.wr-about-yoga {
+    background: url("../media/img/bg-object.png") no-repeat;
+    background-position: right -5px;
+    background-size: contain;
+    padding-top: 30px;
+    padding-bottom: 48px;
+    position: relative;
+    top: -73px;
+}
+
+.about-yoga {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wr-description {
+    max-width: 570px;
+    padding-top: 142px;
+    h1 {
+        font-family: "Poppins Light", sans-serif;
+        font-size: 48px;
+        color: $main-color;
+        font-weight: 100;
+        margin-bottom: 8px;
+    }
+    p {
+        font-family: "Lato Regular", serif;
+        font-size: 14px;
+        line-height: 24px;
+        padding-right: 3px;
+        margin-bottom: 42px;
+    }
+}
+
+.video-container {
+    width: 570px;
+    height: 350px;
+    border: solid 1px transparent;
+    border-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    video {
+        height: 100%;
+        width: 100%;
+    }
+    video[poster] {
+        object-fit: cover;
+    }
+}
+
+.icon-container {
+    min-width: 70px;
+    min-height: 70px;
+    border: 2px solid $main-color;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-description-box {
+    max-width: 374px;
+    p {
+        font-family: "Lato Regular", sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    h4 {
+        font-family: "Poppins Medium", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+}
+
+.benefit-item-box {
+    display: flex;
+    margin-bottom: 52px;
+    align-items: center;
+}
+
+.wr-classes {
+    background-image: url("../media/img/bg-classes.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    color: $main-color;
+    position: relative;
+    .custom-container {
+        padding-top: 115px;
+        padding-bottom: 115px;
+        background-image: url("../media/img/bg-classes-object.png");
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    h3 {
+        font-family: "Poppins Light", sans-serif;
+        font-size: 48px;
+        color: $main-color;
+        font-weight: 100;
+        margin-bottom: 8px;
+        text-align: center;
+        margin-bottom: 66px;
+    }
+    .swiper-container {
+        width: 100%;
+    }
+}
+
+.swiper-slide {
+    max-width: 270px;
+    .img-container {
+        width: 270px;
+        height: 200px;
+        border-radius: 5px;
+        object-fit: contain;
+        overflow: hidden;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    img.first-pic {
+        margin-left: -29px;
+        margin-top: -29px;
+    }
+    img.second-pic {
+        margin-left: -25px;
+        margin-top: -5px;
+    }
+    img.third-pic {
+        margin-left: -21px;
+        margin-top: -38px;
+    }
+    img.fourth-pic {
+        margin-left: -18px;
+    }
+}
+
+.wr-img {
+    display: block;
+}
+
+.wr-img::before {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.wr-img:hover::before {
+    opacity: 1;
+    transition: 0.3s ease-in;
+}
+
+.class-name {
+    display: block;
+    height: 46px;
+    margin-bottom: 13px;
+}
+
+.class-name:hover h5 {
+    color: $main-color;
+}
+
+h5 {
+    font-family: "Poppins Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: $link-color;
+    line-height: 23px;
+}
+
+p {
+    font-family: "Lato Regular", sans-serif;
+    font-size: 13px;
+    color: #999;
+}
+
+.class-description {
+    font-size: 14PX;
+    color: #666;
+    line-height: 24px;
+}
+
+.detailes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.detailes svg {
+    margin-right: 12px;
+}
+
+.clock {
+    width: 12px;
+    height: 12px;
+    fill: $main-color;
+}
+
+.teacher {
+    width: 12px;
+    height: 14px;
+    fill: $main-color;
+}
+
+.level {
+    width: 12px;
+    height: 13px;
+    fill: $main-color;
+}
+
+.btn-left,
+.btn-right {
+    width: 9px;
+    height: 14px;
+    fill: $main-color;
+}
+
+.swiper-button-right {
+    position: absolute;
+    top: 330px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.swiper-button-left {
+    position: absolute;
+    top: 330px;
+    left: 40px;
+    cursor: pointer;
+}
+
+.swiper-button-right:active,
+.swiper-button-right:focus,
+.swiper-button-left:active,
+.swiper-button-left:focus {
+    outline: none;
+}
