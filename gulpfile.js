@@ -67,7 +67,7 @@ function css() {
         )
         .pipe(
             autoprefixer({
-                overrideBrowserlist: ["last 5 versions"],
+                overrideBrowserlist: ["last 2 versions"],
                 cascade: true
             })
         )
@@ -110,7 +110,7 @@ function media() {
 
 }
 
-function watchFiles(params) {
+function watchFiles() {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
     gulp.watch([path.watch.js], js);

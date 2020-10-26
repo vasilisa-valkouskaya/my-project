@@ -193,6 +193,22 @@ button {
   background-color: transparent;
 }
 
+button.promo-btn {
+  text-transform: uppercase;
+  font-family: Poppins Regular, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #7492ec;
+  border-radius: 25px;
+  height: 40px;
+}
+
+button.promo-btn:hover {
+  background-color: #99aade;
+  transition: 0.2s ease;
+}
+
 button:active,
 button:focus {
   outline: none;
@@ -209,8 +225,21 @@ h1,
 h2,
 h3,
 h4,
+h6,
 p {
   margin: 0px;
+}
+
+h3 {
+  font-family: "Poppins Light", sans-serif;
+  font-weight: 100;
+}
+
+.img-container {
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 @font-face {
@@ -295,20 +324,6 @@ nav img {
 
 nav button {
   width: 198px;
-  height: 40px;
-  border: solid 1px transparent;
-  background-color: #7492ec;
-  color: #fff;
-  border-radius: 25px;
-  text-transform: uppercase;
-  font-family: "Poppins Regular", sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-nav button:hover {
-  background-color: #99aade;
-  transition: 0.2s ease;
 }
 
 .wr-introduction {
@@ -387,6 +402,11 @@ nav button:hover {
   position: relative;
 }
 
+.video-container:hover .controls {
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
 .video-container video {
   height: 100%;
   width: 100%;
@@ -395,6 +415,113 @@ nav button:hover {
 .video-container video[poster] {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.video-container .play-btn-main {
+  height: 50px;
+  width: 50px;
+  background-image: url("../media/img/play-btn.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-container .play-btn-main::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border: solid 7px;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+.video-container .play-btn-main:hover::after {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.video-container .button-main-hidden {
+  display: none;
+}
+
+.video-container .controls {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition-duration: 0.4s;
+}
+
+.video-container .controls button {
+  height: 18px;
+  width: 23px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.video-container .playpause {
+  background-image: url("../media/img/play.png");
+  left: 20px;
+}
+
+.video-container .play {
+  background-image: url("../media/img/play.png");
+  left: 20px;
+}
+
+.video-container .pause {
+  background-image: url("../media/img/pause.png");
+  left: 20px;
+}
+
+.video-container .sound-on {
+  background-image: url("../media/img/volume.png");
+  right: 20px;
+}
+
+.video-container .sound-off {
+  background-image: url("../media/img/mute.png");
+  right: 20px;
+}
+
+.video-container progress {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #999;
+  border-radius: 4px;
+  width: 450px;
+  height: 12px;
+  background-size: auto;
+  color: #7492ec;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 54px;
+}
+
+.video-container progress::-webkit-progress-bar {
+  background: transparent;
+}
+
+.video-container progress::-moz-progress-bar {
+  background: #7492ec;
+}
+
+.video-container progress::-webkit-progress-value {
+  background: #7492ec;
 }
 
 .icon-container {
@@ -432,7 +559,7 @@ nav button:hover {
   align-items: center;
 }
 
-.wr-classes {
+.wr-practices {
   background-image: url("../media/img/bg-classes.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -441,7 +568,7 @@ nav button:hover {
   position: relative;
 }
 
-.wr-classes .custom-container {
+.wr-practices .custom-container {
   padding-top: 115px;
   padding-bottom: 115px;
   background-image: url("../media/img/bg-classes-object.png");
@@ -449,17 +576,15 @@ nav button:hover {
   background-position: top;
 }
 
-.wr-classes h3 {
-  font-family: "Poppins Light", sans-serif;
+.wr-practices h3 {
   font-size: 48px;
   color: #7492ec;
-  font-weight: 100;
   margin-bottom: 8px;
   text-align: center;
   margin-bottom: 66px;
 }
 
-.wr-classes .swiper-container {
+.wr-practices .swiper-container {
   width: 100%;
 }
 
@@ -470,10 +595,6 @@ nav button:hover {
 .swiper-slide .img-container {
   width: 270px;
   height: 200px;
-  border-radius: 5px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  overflow: hidden;
   margin-bottom: 30px;
   position: relative;
 }
@@ -497,12 +618,13 @@ nav button:hover {
   margin-left: -18px;
 }
 
-.wr-img {
-  display: block;
+.swiper-slide:hover .img-container::before {
+  opacity: 1;
+  transition-duration: 0.3s;
 }
 
-.wr-img::before {
-  background-color: rgba(0, 0, 0, 0.3);
+.img-container::before {
+  background-color: rgba(0, 0, 0, 0.2);
   content: "";
   position: absolute;
   top: 0;
@@ -512,18 +634,7 @@ nav button:hover {
   opacity: 0;
 }
 
-.wr-img:hover::before {
-  opacity: 1;
-  transition: 0.3s ease-in;
-}
-
-.class-name {
-  display: block;
-  height: 46px;
-  margin-bottom: 13px;
-}
-
-.class-name:hover h5 {
+.practice-name:hover h5 {
   color: #7492ec;
 }
 
@@ -533,6 +644,10 @@ h5 {
   font-weight: 200;
   color: #99aade;
   line-height: 23px;
+  height: 46px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 13px;
 }
 
 p {
@@ -541,7 +656,7 @@ p {
   color: #999;
 }
 
-.class-description {
+.practice-description {
   font-size: 14PX;
   color: #666;
   line-height: 24px;
@@ -601,6 +716,251 @@ p {
 .swiper-button-left:active,
 .swiper-button-left:focus {
   outline: none;
+}
+
+.wr-access {
+  padding-top: 116px;
+  padding-bottom: 120px;
+}
+
+.wr-access .custom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wr-access h3 {
+  font-size: 32px;
+  color: #000000;
+  margin-bottom: 19px;
+}
+
+.wr-access p {
+  width: 450px;
+  line-height: 24px;
+  font-family: Lato Regular, sans-serif;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.wr-access button {
+  width: 300px;
+  margin-bottom: 80px;
+}
+
+.wr-access-img {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(2, 270px);
+  grid-gap: 30px;
+}
+
+.wr-access-img .img-container {
+  position: relative;
+}
+
+.wr-access-img .img-container:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.wr-access-img .img-container::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.wr-access-img .img-container:hover::before {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.wr-access-img .img-container img.first-img {
+  margin-top: -11px;
+  margin-left: -20px;
+}
+
+.wr-access-img .img-container img.second-img {
+  margin-top: -61px;
+  margin-left: -68px;
+}
+
+.wr-access-img .img-container img.third-img {
+  margin-top: -4px;
+  margin-left: -30px;
+}
+
+.wr-access-img .img-container img.fourth-img {
+  margin-top: -172px;
+  margin-left: -5px;
+}
+
+.wr-access-img .img-container img.fifth-img {
+  margin-top: -10px;
+  margin-left: -20px;
+}
+
+.wr-teacher-introduction {
+  background-image: url("../media/img/bg-teacher.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wr-teacher-introduction .custom-container {
+  padding-top: 138px;
+  padding-bottom: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wr-teacher-introduction h3 {
+  font-size: 32px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.wr-teacher-introduction p {
+  width: 545px;
+  line-height: 24px;
+  font-family: Lato Regular, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 53px;
+}
+
+.wr-teacher-introduction span {
+  font-family: Poppins Medium, serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.wr-teacher-list .custom-container {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wr-teacher-list .teacher-item-box {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.wr-teacher-list .teacher-item-box .info-container {
+  width: 170px;
+  padding-top: 16px;
+}
+
+.wr-teacher-list .teacher-item-box .info-container h6 {
+  font-family: Poppins SemiBold, sans-serif;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.wr-teacher-list .teacher-item-box .info-container p {
+  font-size: 14px;
+}
+
+.wr-teacher-list .img-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wr-teacher-list .first-img,
+.wr-teacher-list .second-img,
+.wr-teacher-list .sixth-img {
+  margin-top: 20px;
+}
+
+.wr-teacher-list .third-img {
+  margin-left: 16px;
+}
+
+.wr-teacher-list .fourth-img {
+  margin-left: -7px;
+  margin-top: 10px;
+}
+
+.wr-teacher-list .fifth-img {
+  margin-top: 20px;
+  margin-left: -10px;
+}
+
+.wr-teacher-list .ninth-img {
+  margin-top: -11px;
+  margin-left: -18px;
+}
+
+.wr-renewal {
+  background-color: #f8f7fc;
+  position: relative;
+}
+
+.wr-renewal .wr-renewal-description {
+  margin-left: 186px;
+  padding-top: 241px;
+  padding-bottom: 194px;
+}
+
+.wr-renewal .wr-renewal-description h3 {
+  font-size: 48px;
+  color: #7492ec;
+  margin-bottom: 4px;
+}
+
+.wr-renewal .wr-renewal-description p {
+  width: 455px;
+  font-size: 21px;
+  line-height: 36px;
+  color: #7492ec;
+  margin-bottom: 40px;
+}
+
+.wr-renewal .wr-renewal-description button {
+  width: 213px;
+}
+
+.wr-renewal .wr-picture {
+  height: 746px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  right: 202px;
+}
+
+.wr-companies-list {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.wr-companies-list .swiper-slide {
+  width: 105px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media all and (orientation: landscape), all and (max-height: 700px) {

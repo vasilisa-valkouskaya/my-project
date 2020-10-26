@@ -14,6 +14,21 @@ button {
     background-color: transparent;
 }
 
+button.promo-btn {
+    text-transform: uppercase;
+    font-family: Poppins Regular, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background-color: $main-color;
+    border-radius: 25px;
+    height: 40px;
+    &:hover {
+        background-color: $link-color;
+        transition: 0.2s ease;
+    }
+}
+
 button:active,
 button:focus {
     outline: none;
@@ -30,6 +45,18 @@ h1,
 h2,
 h3,
 h4,
+h6,
 p {
     margin: 0px;
+}
+
+h3 {
+    font-family: "Poppins Light", sans-serif;
+    font-weight: 100;
+}
+
+.img-container {
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 5px;
 }
