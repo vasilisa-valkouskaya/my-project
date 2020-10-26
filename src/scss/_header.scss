@@ -7,14 +7,22 @@ header {
     font-size: 16px;
     box-sizing: border-box;
     width: 100%;
+    .wr-logo {
+        position: relative;
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
 }
 
-header.sticky {
+.sticky {
     padding: 0 60px;
     background-color: #edf1f7;
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 100;
     box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
 }

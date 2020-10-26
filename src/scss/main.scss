@@ -2,12 +2,12 @@
 @import "settings";
 @import "fonts";
 @import "header";
+@import "footer";
 .wr-introduction {
     height: 100vh;
     background: url("../media/img/top-background.png") no-repeat;
     background-size: cover;
     background-position: bottom;
-    position: relative;
 }
 
 .wr-slogan {
@@ -258,21 +258,20 @@
     img.fourth-pic {
         margin-left: -18px;
     }
+    .img-container::before {
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+    }
     &:hover .img-container::before {
         opacity: 1;
         transition-duration: 0.3s;
     }
-}
-
-.img-container::before {
-    background-color: rgba($color: #000000, $alpha: 0.2);
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
 }
 
 .practice-name:hover h5 {
@@ -307,10 +306,9 @@ p {
     display: flex;
     align-items: center;
     margin-bottom: 14px;
-}
-
-.detailes svg {
-    margin-right: 12px;
+    svg {
+        margin-right: 12px;
+    }
 }
 
 .clock {
@@ -375,7 +373,7 @@ p {
     p {
         width: 450px;
         line-height: 24px;
-        font-family: Lato Regular, sans-serif;
+        font-family: "Lato Regular", sans-serif;
         font-size: 14px;
         color: #666;
         text-align: center;
@@ -456,14 +454,14 @@ p {
     p {
         width: 545px;
         line-height: 24px;
-        font-family: Lato Regular, sans-serif;
+        font-family: "Lato Regular", sans-serif;
         font-size: 14px;
         color: #fff;
         text-align: center;
         margin-bottom: 53px;
     }
     span {
-        font-family: Poppins Medium, serif;
+        font-family: "Poppins Medium", serif;
         font-size: 14px;
         text-transform: capitalize;
         color: #fff;
@@ -486,7 +484,6 @@ p {
             width: 170px;
             padding-top: 16px;
             h6 {
-                font-family: Poppins SemiBold, sans-serif;
                 font-size: 16px;
                 margin-bottom: 6px;
             }
@@ -560,8 +557,8 @@ p {
 }
 
 .wr-companies-list {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 78px;
+    padding-bottom: 78px;
     .swiper-slide {
         width: 105px;
         height: 80px;

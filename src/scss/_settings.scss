@@ -16,7 +16,7 @@ button {
 
 button.promo-btn {
     text-transform: uppercase;
-    font-family: Poppins Regular, sans-serif;
+    font-family: "Poppins Regular", sans-serif;
     font-size: 12px;
     font-weight: 600;
     color: #fff;
@@ -53,6 +53,10 @@ p {
 h3 {
     font-family: "Poppins Light", sans-serif;
     font-weight: 100;
+}
+
+h6 {
+    font-family: "Poppins SemiBold", sans-serif;
 }
 
 .img-container {

@@ -12,9 +12,10 @@
 <body>
     <section class="wr-introduction">
         <header>
-            <a class="logo" href="./index.html">
+            <div class="wr-logo">
+                <a class="logo" href="./index.html"></a>
                 <img src="./media/img/logo.png" alt="logo">
-            </a>
+            </div>
             <nav>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
@@ -494,7 +495,28 @@
                 </div>
             </div>
     </section>
+    <footer>
+        <div class="wr-subscribe">
+            <div class="custom-container">
+                <div class="wr-logo">
+                    <a class="logo" href="./index.html"></a>
+                    <img src="./media/img/footer-logo.png" alt="logo">
+                </div>
+                <div class="wr-contact-form">
+                    <div class="wr-contact-form-text">
+                        <h6>Subscribe</h6>
+                        <p>To receive the lastest freebies in your inbox</p>
+                    </div>
 
+                    <form action="https://formspree.io/f/xvovaezv" method="POST">
+                        <input type="email" id="subscription" name="subscription" placeholder="Your Address Email" maxlength="180" required>
+                        <button type="submit">subscribe</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
     </script>

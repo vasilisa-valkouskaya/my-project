@@ -195,7 +195,7 @@ button {
 
 button.promo-btn {
   text-transform: uppercase;
-  font-family: Poppins Regular, sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   font-size: 12px;
   font-weight: 600;
   color: #fff;
@@ -233,6 +233,10 @@ p {
 h3 {
   font-family: "Poppins Light", sans-serif;
   font-weight: 100;
+}
+
+h6 {
+  font-family: "Poppins SemiBold", sans-serif;
 }
 
 .img-container {
@@ -288,12 +292,22 @@ header {
   width: 100%;
 }
 
-header.sticky {
+header .wr-logo {
+  position: relative;
+}
+
+header .wr-logo .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.sticky {
   padding: 0 60px;
   background-color: #edf1f7;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 100;
   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
 }
@@ -326,12 +340,125 @@ nav button {
   width: 198px;
 }
 
+.wr-subscribe {
+  background-color: #181818;
+  border-bottom: solid 2px #333;
+}
+
+.wr-subscribe .custom-container {
+  display: flex;
+}
+
+.wr-subscribe .wr-logo {
+  padding: 22px 0;
+  position: relative;
+  width: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.wr-subscribe .wr-logo .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.wr-contact-form {
+  margin-left: 206px;
+  border-left: solid 2px #333;
+  display: flex;
+}
+
+.wr-contact-form .wr-contact-form-text {
+  height: 100%;
+  padding: 0 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wr-contact-form .wr-contact-form-text h6 {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.wr-contact-form .wr-contact-form-text p {
+  font-family: "Lato Italic", serif;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.wr-contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 180px;
+  position: relative;
+}
+
+.wr-contact-form form input {
+  width: 355px;
+  height: 49px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.wr-contact-form form input::-moz-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.wr-contact-form form input:-ms-input-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.wr-contact-form form input::placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.wr-contact-form form input:focus {
+  outline: none;
+  border: 1px solid #676767;
+}
+
+.wr-contact-form form button {
+  width: 140px;
+  height: 50px;
+  background-color: #7492ec;
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -55px;
+  transition-delay: 0.2s;
+}
+
+.wr-contact-form form button:hover {
+  background-color: #99aade;
+}
+
 .wr-introduction {
   height: 100vh;
   background: url("../media/img/top-background.png") no-repeat;
   background-size: cover;
   background-position: bottom;
-  position: relative;
 }
 
 .wr-slogan {
@@ -618,12 +745,7 @@ nav button {
   margin-left: -18px;
 }
 
-.swiper-slide:hover .img-container::before {
-  opacity: 1;
-  transition-duration: 0.3s;
-}
-
-.img-container::before {
+.swiper-slide .img-container::before {
   background-color: rgba(0, 0, 0, 0.2);
   content: "";
   position: absolute;
@@ -632,6 +754,11 @@ nav button {
   left: 0;
   right: 0;
   opacity: 0;
+}
+
+.swiper-slide:hover .img-container::before {
+  opacity: 1;
+  transition-duration: 0.3s;
 }
 
 .practice-name:hover h5 {
@@ -738,7 +865,7 @@ p {
 .wr-access p {
   width: 450px;
   line-height: 24px;
-  font-family: Lato Regular, sans-serif;
+  font-family: "Lato Regular", sans-serif;
   font-size: 14px;
   color: #666;
   text-align: center;
@@ -832,7 +959,7 @@ p {
 .wr-teacher-introduction p {
   width: 545px;
   line-height: 24px;
-  font-family: Lato Regular, sans-serif;
+  font-family: "Lato Regular", sans-serif;
   font-size: 14px;
   color: #fff;
   text-align: center;
@@ -840,7 +967,7 @@ p {
 }
 
 .wr-teacher-introduction span {
-  font-family: Poppins Medium, serif;
+  font-family: "Poppins Medium", serif;
   font-size: 14px;
   text-transform: capitalize;
   color: #fff;
@@ -866,7 +993,6 @@ p {
 }
 
 .wr-teacher-list .teacher-item-box .info-container h6 {
-  font-family: Poppins SemiBold, sans-serif;
   font-size: 16px;
   margin-bottom: 6px;
 }
@@ -951,8 +1077,8 @@ p {
 }
 
 .wr-companies-list {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 78px;
+  padding-bottom: 78px;
 }
 
 .wr-companies-list .swiper-slide {

@@ -1,0 +1,90 @@
+$footer-color: #333;
+$text-color: #bbb;
+.wr-subscribe {
+    background-color: #181818;
+    border-bottom: solid 2px $footer-color;
+    .custom-container {
+        display: flex;
+    }
+    .wr-logo {
+        padding: 22px 0;
+        position: relative;
+        width: 60px;
+        object-fit: contain;
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.wr-contact-form {
+    margin-left: 206px;
+    border-left: solid 2px $footer-color;
+    display: flex;
+    .wr-contact-form-text {
+        height: 100%;
+        padding: 0 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h6 {
+            font-size: 16px;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+        p {
+            font-family: "Lato Italic", serif;
+            font-size: 13px;
+            color: $text-color;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 180px;
+        position: relative;
+        input {
+            width: 355px;
+            height: 49px;
+            box-sizing: border-box;
+            padding-left: 20px;
+            border-radius: 25px;
+            border: none;
+            background-color: $footer-color;
+            color: #fff;
+            &::placeholder {
+                font-family: "Lato Regular", sans-serif;
+                font-size: 13px;
+                color: $text-color;
+            }
+            &:focus {
+                outline: none;
+                border: 1px solid #676767;
+            }
+        }
+        button {
+            width: 140px;
+            height: 50px;
+            background-color: $main-color;
+            font-family: "Poppins SemiBold", sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #fff;
+            border-radius: 25px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: -55px;
+            transition-delay: 0.2s;
+            &:hover {
+                background-color: $link-color;
+            }
+        }
+    }
+}
