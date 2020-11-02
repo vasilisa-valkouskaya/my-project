@@ -1,7 +1,7 @@
 // swiper slider
 
 var galleryTop = new Swiper('.gallery-top', {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
 
@@ -9,18 +9,33 @@ var galleryTop = new Swiper('.gallery-top', {
         nextEl: '.swiper-button-right',
         prevEl: '.swiper-button-left',
     },
+    breakpoints: {
+        1250: {
+            slidesPerView: 4,
+            spaceBetween: 30
+        }
+    }
 
 });
 
 var galleryBottom = new Swiper('.gallery-bottom', {
-    slidesPerView: 5,
+    slidesPerView: 3,
     spaceBetween: 170,
     loop: true,
     speed: 1500,
     autoplay: {
         delay: 4000,
-
     },
+    breakpoints: {
+        980: {
+            slidesPerView: 4
+
+        },
+        1175: {
+            slidesPerView: 5
+
+        }
+    }
 });
 
 
@@ -97,6 +112,8 @@ if (soundBtn) {
     });
 }
 
+// video progress bar
+
 video.addEventListener('loadedmetadata', function() {
     progress.setAttribute('max', video.duration);
 });
@@ -108,17 +125,19 @@ video.addEventListener('timeupdate', function() {
 });
 
 
-if (progress) {
-    progress.onclick = videoRewind;
-}
+progress.addEventListener('click', function(e) {
+    var pos = e.offsetX / this.offsetWidth;
+    video.currentTime = pos * video.duration;
+});
 
-function videoRewind() {
-    let w = this.offsetWidth;
-    let o = event.offsetX;
-    console.log(w);
-    console.log(o);
-    this.value = o / w * 100;
-    video.pause();
-    video.currentTime = video.duration * (o / w);
-    video.play();
-}
+// fancybox gallery
+
+$('[data-fancybox="gallery"]').fancybox({
+    keyboard: true,
+    buttons: [
+        "download",
+        "close"
+    ],
+    transitionEffect: "slide",
+    transitionDuration: 600,
+});

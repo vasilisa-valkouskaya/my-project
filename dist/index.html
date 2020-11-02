@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./media/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Yoga Club Homepage</title>
@@ -19,7 +21,7 @@
             <nav>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li><a href="./about.html">About us</a></li>
                     <li><a href="#">Teacher</a></li>
                     <li><a href="#">Pricing</a></li>
                     <li><a href="#">Blog</a></li>
@@ -36,467 +38,491 @@
             </div>
         </section>
     </section>
-    <section class="wr-about-yoga">
-        <div class="custom-container">
+    <main>
+        <section class="wr-about-yoga">
+            <div class="custom-container">
 
-            <div class="wr-description">
-                <h1>Everyone's Yoga</h1>
-                <p>We offers over 4,000 professionally-filmed online yoga classes taught by experienced, certified yoga teachers to customers around the world. We believe that yoga should be accessible to everyone and our classes are designed to give you
-                    an in-studio experience, at an affordable price, in your own home. </p>
-                <div class="video-container">
-                    <video id="video" src="./media/video/yoga.mp4" poster="./media/img/video-poster.jpg" type="video/mp4" loop="loop">
+                <div class="wr-description">
+                    <h1>Everyone's Yoga</h1>
+                    <p>We offer over 4,000 professionally-filmed online yoga classes taught by experienced, certified yoga teachers to customers around the world. We believe that yoga should be accessible to everyone and our classes are designed to give
+                        you an in-studio experience, at an affordable price, in your own home. </p>
+                    <div class="video-container">
+                        <video id="video" src="./media/video/yoga.mp4" poster="./media/img/video-poster.jpg" loop="loop">
                     </video>
-                    <div class="controls">
-                        <progress id="progress" value="0" min="0">
+                        <div class="controls">
+                            <progress id="progress" value="0">
                             <span id="progress-bar"></span>
                          </progress>
-                        <button id="playpause" class="playpause"></button>
-                        <button id="sound" class="sound-on"></button>
+                            <button id="playpause" class="playpause"></button>
+                            <button id="sound" class="sound-on"></button>
+                        </div>
+                        <button class="play-btn-main"></button>
                     </div>
-                    <button class="play-btn-main"></button>
-                </div>
 
+                </div>
+                <div class="wr-benefits">
+                    <div class="benefit-item-box">
+                        <div class="icon-container">
+                            <img src="./media/img/balance-icon.png" alt="balance">
+                        </div>
+                        <div class="benefit-description-box">
+                            <h4>Balance Body &amp; Mind</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item-box">
+                        <div class="icon-container">
+                            <img src="./media/img/weight-icon.png" alt="weigth loss">
+                        </div>
+                        <div class="benefit-description-box">
+                            <h4>Weight Loss</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item-box">
+                        <div class="icon-container">
+                            <img src="./media/img/meditation-icon.png" alt="meditation">
+                        </div>
+                        <div class="benefit-description-box">
+                            <h4>Meditation Practise</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item-box">
+                        <div class="icon-container">
+                            <img src="./media/img/freedom-icon.png" alt="freedom">
+                        </div>
+                        <div class="benefit-description-box">
+                            <h4>Yoga is a way to freedom</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item-box">
+                        <div class="icon-container">
+                            <img src="./media/img/energy-icon.png" alt="energy">
+                        </div>
+                        <div class="benefit-description-box">
+                            <h4>Increased Energy</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="wr-benefits">
-                <div class="benefit-item-box">
-                    <div class="icon-container">
-                        <img src="./media/img/balance-icon.png" alt="balance">
+        </section>
+        <section class="wr-practices">
+            <div class="custom-container">
+                <h3>Our Classes</h3>
+                <div class="wr-slider">
+                    <div class="swiper-container gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img-container">
+                                    <picture>
+                                        <source srcset="./media/img/slides/first-slide.webp 1x, ./media/img/slides/first-slide@2x.webp 2x, ./media/img/slides/first-slide@3x.webp 3x" type="image/webp">
+                                        <img src="./media/img/slides/first-slide.jpg" srcset="./media/img/slides/first-slide@2x.jpg 2x, ./media/img/slides/first-slide@3x.jpg 3x" alt="Poses picture">
+                                    </picture>
+                                </div>
+                                <a class="practice-name" href="#">
+                                    <h5>Seated and Supine Poses for Beginners</h5>
+                                </a>
+                                <div class="detailes">
+                                    <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                    <p>7:00 am &mdash; 11:00 am</p>
+                                </div>
+                                <div class="detailes ">
+                                    <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+                                    <p>Simon Park</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
+                                    <p>Advanced</p>
+
+                                </div>
+                                <p class="practice-description">Welcome to part 5 of our beginner series with Simon Park! </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-container">
+                                    <picture>
+                                        <source srcset="./media/img/slides/second-slide.webp 1x, ./media/img/slides/second-slide@2x.webp 2x, ./media/img/slides/second-slide@3x.webp 3x" type="image/webp">
+                                        <img src="./media/img/slides/second-slide.jpg" srcset="./media/img/slides/second-slide@2x.jpg 2x, ./media/img/slides/second-slide@3x.jpg 3x" alt="Poses picture">
+                                    </picture>
+                                </div>
+                                <a class="practice-name" href="#">
+                                    <h5>Work Towards Compass Pose</h5>
+                                </a>
+                                <div class="detailes">
+                                    <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                    <p>7:00 am &mdash; 11:00 am</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+                                    <p>Simon Park</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
+                                    <p>Advanced</p>
+
+                                </div>
+                                <p class="practice-description">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-container">
+                                    <picture>
+                                        <source srcset="./media/img/slides/third-slide.webp 1x, ./media/img/slides/third-slide@2x.webp 2x, ./media/img/slides/third-slide@3x.webp 3x" type="image/webp">
+                                        <img src="./media/img/slides/third-slide.jpg" srcset="./media/img/slides/third-slide@2x.jpg 2x, ./media/img/slides/third-slide@3x.jpg 3x" alt="Poses picture">
+                                    </picture>
+                                </div>
+                                <a class="practice-name" href="#">
+                                    <h5>Handstand Variations and Transitions</h5>
+                                </a>
+                                <div class="detailes">
+                                    <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                    <p>7:00 am &mdash; 11:00 am</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+                                    <p>Simon Park</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
+                                    <p>Advanced</p>
+                                </div>
+                                <p class="practice-description">Explore handstand variation and transitions in this advanced class. A brief warm up will prepare you to play with inversions!</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-container">
+                                    <picture>
+                                        <source srcset="./media/img/slides/fourth-slide.webp 1x, ./media/img/slides/fourth-slide@2x.webp 2x, ./media/img/slides/fourth-slide@3x.webp 3x" type="image/webp">
+                                        <img src="./media/img/slides/fourth-slide.jpg" srcset="./media/img/slides/fourth-slide@2x.jpg 2x, ./media/img/slides/fourth-slide@3x.jpg 3x" alt="Poses picture">
+                                    </picture>
+                                </div>
+                                <a class="practice-name" href="#">
+                                    <h5>Advanced Backbending</h5>
+                                </a>
+                                <div class="detailes">
+                                    <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                    <p>7:00 am &mdash; 11:00 am</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+                                    <p>Simon Park</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
+                                    <p>Advanced</p>
+
+                                </div>
+                                <p class="practice-description">Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days ...</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-container">
+                                    <picture>
+                                        <source srcset="./media/img/slides/fifth-slide.webp 1x, ./media/img/slides/fifth-slide@2x.webp 2x, ./media/img/slides/fifth-slide@3x.webp 3x" type="image/webp">
+                                        <img src="./media/img/slides/fifth-slide.jpg" srcset="./media/img/slides/fifth-slide@2x.jpg 2x, ./media/img/slides/fifth-slide@3x.jpg 3x" alt="Poses picture">
+                                    </picture>
+
+                                </div>
+                                <a class="practice-name" href="#">
+                                    <h5>Seated and Suspine Poses for Beginners</h5>
+                                </a>
+                                <div class="detailes">
+                                    <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                    <p>7:00 am - 11:00 am</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+                                    <p>Simon Park</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
+                                    <p>Advanced</p>
+
+                                </div>
+                                <p class="practice-description">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-container">
+                                    <picture>
+                                        <source srcset="./media/img/slides/sixth-slide.webp 1x, ./media/img/slides/sixth-slide@2x.webp 2x, ./media/img/slides/sixth-slide@3x.webp 3x" type="image/webp">
+                                        <img src="./media/img/slides/sixth-slide.jpg" srcset="./media/img/slides/sixth-slide@2x.jpg 2x, ./media/img/slides/sixth-slide@3x.jpg 3x" alt="Poses picture">
+                                    </picture>
+                                </div>
+                                <a class="practice-name" href="#">
+                                    <h5>Work Towards Compass Pose</h5>
+                                </a>
+                                <div class="detailes">
+                                    <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                    <p>7:00 am - 11:00 am</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+                                    <p>Simon Park</p>
+                                </div>
+                                <div class="detailes">
+                                    <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
+                                    <p>Advanced</p>
+                                </div>
+                                <p class="practice-description">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="benefit-description-box">
-                        <h4>Balance Body &amp; Mind</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                    <div class="swiper-button-left">
+                        <svg class="btn-left" viewBox="0 0 320 512">
+                        <path  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
                     </div>
-                </div>
-                <div class="benefit-item-box">
-                    <div class="icon-container">
-                        <img src="./media/img/weight-icon.png" alt="weigth loss">
-                    </div>
-                    <div class="benefit-description-box">
-                        <h4>Weight Loss</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
-                    </div>
-                </div>
-                <div class="benefit-item-box">
-                    <div class="icon-container">
-                        <img src="./media/img/meditation-icon.png" alt="meditation">
-                    </div>
-                    <div class="benefit-description-box">
-                        <h4>Meditation Practise</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
-                    </div>
-                </div>
-                <div class="benefit-item-box">
-                    <div class="icon-container">
-                        <img src="./media/img/freedom-icon.png" alt="freedom">
-                    </div>
-                    <div class="benefit-description-box">
-                        <h4>Yoga is a way to freedom</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
-                    </div>
-                </div>
-                <div class="benefit-item-box">
-                    <div class="icon-container">
-                        <img src="./media/img/energy-icon.png" alt="energy">
-                    </div>
-                    <div class="benefit-description-box">
-                        <h4>Increased Energy</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                    <div class="swiper-button-right">
+                        <svg class="btn-right" viewBox="0 0 320 512">
+                        <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="wr-practices">
-        <div class="custom-container">
-            <h3>Our Classes</h3>
-            <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+
+        </section>
+        <section class="wr-access">
+            <div class="custom-container">
+                <h3>Tap into your inner fountain of youth.</h3>
+                <p>Access hundreds of yoga classes shot in natural studios around the world. Unlimited access for $15/month.</p>
+                <button class="promo-btn">Start your 14-day free trial</button>
+                <div class="wr-access-img">
+                    <div class="img-container">
+                        <picture>
+                            <source srcset="./media/img/access/first-img.webp 1x, ./media/img/access/first-img@2x.webp 2x, ./media/img/access/first-img@3x.webp 3x" type="image/webp">
+                            <img src="./media/img/access/first-img.jpg" srcset="./media/img/access/first-img@2x.jpg 2x, ./media/img/access/first-img@3x.jpg 3x" alt="Training image">
+                        </picture>
+                        <a href="./media/img/access/first-img.jpg" data-fancybox="gallery"></a>
+                    </div>
+                    <div class="img-container">
+                        <picture>
+                            <source srcset="./media/img/access/second-img.webp 1x, ./media/img/access/second-img@2x.webp 2x, ./media/img/access/second-img@3x.webp 3x" type="image/webp">
+                            <img src="./media/img/access/second-img.jpg" srcset="./media/img/access/second-img@2x.jpg 2x, ./media/img/access/second-img@3x.jpg 3x" alt="Training image">
+                        </picture>
+                        <a href="./media/img/access/second-img.jpg" data-fancybox="gallery"></a>
+                    </div>
+                    <div class="img-container">
+                        <picture>
+                            <source srcset="./media/img/access/third-img.webp 1x, ./media/img/access/third-img@2x.webp 2x, ./media/img/access/third-img@3x.webp 3x" type="image/webp">
+                            <img src="./media/img/access/third-img.jpg" srcset="./media/img/access/third-img@2x.jpg 2x, ./media/img/access/third-img@3x.jpg 3x" alt="Training image">
+                        </picture>
+                        <a href="./media/img/access/third-img.jpg" data-fancybox="gallery"></a>
+                    </div>
+                    <div class="img-container">
+                        <picture>
+                            <source srcset="./media/img/access/fourth-img.webp 1x, ./media/img/access/fourth-img@2x.webp 2x, ./media/img/access/fourth-img@3x.webp 3x" type="image/webp">
+                            <img src="./media/img/access/fourth-img@2x.jpg" srcset="./media/img/access/fourth-img@2x.jpg 2x, ./media/img/access/fourth-img@3x.jpg 3x" alt="Training image">
+                        </picture>
+                        <a href="./media/img/access/fourth-img.jpg" data-fancybox="gallery"></a>
+                    </div>
+                    <div class="img-container">
+                        <picture>
+                            <source srcset="./media/img/access/fifth-img.webp 1x, ./media/img/access/fifth-img@2x.webp 2x, ./media/img/access/fifth-img@3x.webp 3x" type="image/webp">
+                            <img src="./media/img/access/fifth-img.jpg" srcset="./media/img/access/fifth-img@2x.jpg 2x, ./media/img/access/fifth-img@3x.jpg 3x" alt="Training image">
+                        </picture>
+                        <a href="./media/img/access/fifth-img.jpg" data-fancybox="gallery"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wr-teachers">
+            <section class="wr-teacher-introduction">
+                <div class="custom-container">
+                    <h3>The most experienced yoga instructors</h3>
+                    <p>Our mission is to bring the communities of Brookhaven, Dunwoody, Old Fourth Ward, and Buckhead a knowledgeable, welcoming, and comfortable place to practice yoga and to enhance your well-being and general approach to holistic health.
+                    </p>
+                    <span>Meet our teacher</span>
+                    <img src="./media/img/arrow-down.png" alt="down">
+                </div>
+            </section>
+            <section class="wr-teacher-list">
+                <div class="custom-container">
+                    <div class="teacher-item-box">
                         <div class="img-container">
                             <picture>
-                                <source srcset="./media/img/slides/first-slide.webp 1x, ./media/img/slides/first-slide@2x.webp 2x, ./media/img/slides/first-slide@3x.webp 3x" type="image/webp">
-                                <img class="first-pic" src="./media/img/slides/first-slide.jpg" srcset="./media/img/slides/first-slide@2x.jpg 2x, ./media/img/slides/first-slide@3x.jpg 3x" alt="Poses picture">
+                                <source srcset="./media/img/teachers/nickerson.webp 1x, ./media/img/teachers/nickerson@2x.webp 2x, ./media/img/teachers/nickerson@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/nickerson.jpg" srcset="./media/img/teachers/nickerson@2x.jpg 2x, ./media/img/teachers/nickerson@3x.jpg 3x" alt="Becky Nickerson">
                             </picture>
                         </div>
-                        <a class="practice-name" href="#">
-                            <h5>Seated and Supine Poses for Beginners</h5>
-                        </a>
-                        <div class="detailes">
-                            <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
-                            <p>7:00 am &mdash; 11:00 am</p>
+                        <div class="info-container">
+                            <a href="#">Becky Nickerson</a>
+                            <p>Owner/Lead Instructor</p>
                         </div>
-                        <div class="detailes ">
-                            <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
-                            <p>Simon Park</p>
-                        </div>
-                        <div class="detailes">
-                            <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
-                            <p>Advanced</p>
-
-                        </div>
-                        <p class="practice-description">Welcome to part 5 of our beginner series with Simon Park! </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="teacher-item-box">
                         <div class="img-container">
                             <picture>
-                                <source srcset="./media/img/slides/second-slide.webp 1x, ./media/img/slides/second-slide@2x.webp 2x, ./media/img/slides/second-slide@3x.webp 3x" type="image/webp">
-                                <img class="second-pic" src="./media/img/slides/second-slide.jpg" srcset="./media/img/slides/second-slide@2x.jpg 2x, ./media/img/slides/second-slide@3x.jpg 3x" alt="Poses picture">
+                                <source srcset="./media/img/teachers/harkness.webp 1x, ./media/img/teachers/harkness@2x.webp 2x, ./media/img/teachers/harkness@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/harkness.jpg" srcset="./media/img/teachers/harkness@2x.jpg 2x, ./media/img/teachers/harkness@3x.jpg 3x" alt="Taylor Harkness">
                             </picture>
                         </div>
-                        <a class="practice-name" href="#">
-                            <h5>Work Towards Compass Pose</h5>
-                        </a>
-                        <div class="detailes">
-                            <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
-                            <p>7:00 am &mdash; 11:00 am</p>
+                        <div class="info-container">
+                            <a href="#">Taylor Harkness</a>
+                            <p>Owner/Lead Instructor</p>
                         </div>
-                        <div class="detailes">
-                            <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
-                            <p>Simon Park</p>
-                        </div>
-                        <div class="detailes">
-                            <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
-                            <p>Advanced</p>
-
-                        </div>
-                        <p class="practice-description">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="teacher-item-box">
                         <div class="img-container">
                             <picture>
-                                <source srcset="./media/img/slides/third-slide.webp 1x, ./media/img/slides/third-slide@2x.webp 2x, ./media/img/slides/third-slide@3x.webp 3x" type="image/webp">
-                                <img class="third-pic" src="./media/img/slides/third-slide.jpg" srcset="./media/img/slides/third-slide@2x.jpg 2x, ./media/img/slides/third-slide@3x.jpg 3x" alt="Poses picture">
+                                <source srcset="./media/img/teachers/skubic.webp 1x, ./media/img/teachers/skubic@2x.webp 2x, ./media/img/teachers/skubic@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/skubic.jpg" srcset="./media/img/teachers/skubic@2x.jpg 2x, ./media/img/teachers/skubic@3x.jpg 3x" alt="Natalie Skubic">
                             </picture>
                         </div>
-                        <a class="practice-name" href="#">
-                            <h5>Handstand Variations and Transitions</h5>
-                        </a>
-                        <div class="detailes">
-                            <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
-                            <p>7:00 am &mdash; 11:00 am</p>
+                        <div class="info-container">
+                            <a href="#">Natalie Skubic</a>
+                            <p>Instructor</p>
                         </div>
-                        <div class="detailes">
-                            <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
-                            <p>Simon Park</p>
-                        </div>
-                        <div class="detailes">
-                            <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
-                            <p>Advanced</p>
-                        </div>
-                        <p class="practice-description">Explore handstand variation and transitions in this advanced class. A brief warm up will prepare you to play with inversions!</p>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="teacher-item-box">
                         <div class="img-container">
                             <picture>
-                                <source srcset="./media/img/slides/fourth-slide.webp 1x, ./media/img/slides/fourth-slide@2x.webp 2x, ./media/img/slides/fourth-slide@3x.webp 3x" type="image/webp">
-                                <img class="fourth-pic" src="./media/img/slides/fourth-slide.jpg" srcset="./media/img/slides/fourth-slide@2x.jpg 2x, ./media/img/slides/fourth-slide@3x.jpg 3x" alt="Poses picture">
+                                <source srcset="./media/img/teachers/hesse.webp 1x, ./media/img/teachers/hesse@2x.webp 2x, ./media/img/teachers/hesse@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/hesse.jpg" srcset="./media/img/teachers/hesse@2x.jpg 2x, ./media/img/teachers/hesse@3x.jpg 3x" alt="Meredith Hesse">
                             </picture>
                         </div>
-                        <a class="practice-name" href="#">
-                            <h5>Advanced Backbending</h5>
-                        </a>
-                        <div class="detailes">
-                            <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
-                            <p>7:00 am &mdash; 11:00 am</p>
+                        <div class="info-container">
+                            <a href="#">Meredith Hesse</a>
+                            <p>Instructor</p>
                         </div>
-                        <div class="detailes">
-                            <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
-                            <p>Simon Park</p>
-                        </div>
-                        <div class="detailes">
-                            <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
-                            <p>Advanced</p>
-
-                        </div>
-                        <p class="practice-description">Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days ...</p>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="teacher-item-box">
                         <div class="img-container">
                             <picture>
-                                <source srcset="./media/img/slides/fifth-slide.webp 1x, ./media/img/slides/fifth-slide@2x.webp 2x, ./media/img/slides/fifth-slide@3x.webp 3x" type="image/webp">
-                                <img src="./media/img/slides/fifth-slide.jpg" srcset="./media/img/slides/fifth-slide@2x.jpg 2x, ./media/img/slides/fifth-slide@3x.jpg 3x" alt="Poses picture">
+                                <source srcset="./media/img/teachers/sousa.webp 1x, ./media/img/teachers/sousa@2x.webp 2x, ./media/img/teachers/sousa@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/sousa.jpg" srcset="./media/img/teachers/sousa@2x.jpg 2x, ./media/img/teachers/sousa@3x.jpg 3x" alt="Jeff Sousa">
                             </picture>
-
                         </div>
-                        <a class="practice-name" href="#">
-                            <h5>Seated and Suspine Poses for Beginners</h5>
-                        </a>
-                        <div class="detailes">
-                            <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
-                            <p>7:00 am - 11:00 am</p>
+                        <div class="info-container">
+                            <a href="#">Jeff Sousa</a>
+                            <p>Instructor</p>
                         </div>
-                        <div class="detailes">
-                            <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
-                            <p>Simon Park</p>
-                        </div>
-                        <div class="detailes">
-                            <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
-                            <p>Advanced</p>
-
-                        </div>
-                        <p class="practice-description">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="teacher-item-box">
                         <div class="img-container">
                             <picture>
-                                <source srcset="./media/img/slides/sixth-slide.webp 1x, ./media/img/slides/sixth-slide@2x.webp 2x, ./media/img/slides/sixth-slide@3x.webp 3x" type="image/webp">
-                                <img src="./media/img/slides/sixth-slide.jpg" srcset="./media/img/slides/sixth-slide@2x.jpg 2x, ./media/img/slides/sixth-slide@3x.jpg 3x" alt="Poses picture">
+                                <source srcset="./media/img/teachers/lorenzo.webp 1x, ./media/img/teachers/lorenzo@2x.webp 2x, ./media/img/teachers/lorenzo@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/lorenzo.jpg" srcset="./media/img/teachers/lorenzo@2x.jpg 2x, ./media/img/teachers/lorenzo@3x.jpg 3x" alt="Ashley Lorenzo">
                             </picture>
                         </div>
-                        <a class="practice-name" href="#">
-                            <h5>Work Towards Compass Pose</h5>
-                        </a>
-                        <div class="detailes">
-                            <svg class="clock" viewBox="0 0 512 512"><path  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
-                            <p>7:00 am - 11:00 am</p>
+                        <div class="info-container">
+                            <a href="#">Ashley Lorenzo</a>
+                            <p>Instructor</p>
                         </div>
-                        <div class="detailes">
-                            <svg class="teacher" viewBox="0 0 448 512"><path  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
-                            <p>Simon Park</p>
+                    </div>
+                    <div class="teacher-item-box">
+                        <div class="img-container">
+                            <picture>
+                                <source srcset="./media/img/teachers/calderon.webp 1x, ./media/img/teachers/calderon@2x.webp 2x, ./media/img/teachers/calderon@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/calderon.jpg" srcset="./media/img/teachers/calderon@2x.jpg 2x, ./media/img/teachers/calderon@3x.jpg 3x" alt="Jessica Calderon">
+                            </picture>
                         </div>
-                        <div class="detailes">
-                            <svg class="level" viewBox="0 0 320 512"><path  d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"></path></svg>
-                            <p>Advanced</p>
+                        <div class="info-container">
+                            <a href="#">Jessica Calderon</a>
+                            <p>Instructor</p>
                         </div>
-                        <p class="practice-description">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
+                    </div>
+                    <div class="teacher-item-box">
+                        <div class="img-container">
+                            <picture>
+                                <source srcset="./media/img/teachers/johnson.webp 1x, ./media/img/teachers/johnson@2x.webp 2x, ./media/img/teachers/johnson@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/johnson.jpg" srcset="./media/img/teachers/johnson@2x.jpg 2x, ./media/img/teachers/johnson@3x.jpg 3x" alt="Doug Johnson">
+                            </picture>
+                        </div>
+                        <div class="info-container">
+                            <a href="#">Doug Johnson</a>
+                            <p>Instructor</p>
+                        </div>
+                    </div>
+                    <div class="teacher-item-box">
+                        <div class="img-container">
+                            <picture>
+                                <source srcset="./media/img/teachers/caplan.webp 1x, ./media/img/teachers/caplan@2x.webp 2x, ./media/img/teachers/caplan@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/caplan.jpg" srcset="./media/img/teachers/caplan@2x.jpg 2x, ./media/img/teachers/caplan@3x.jpg 3x" alt="Sharon Caplan">
+                            </picture>
+                        </div>
+                        <div class="info-container">
+                            <a href="#">Sharon Caplan</a>
+                            <p>Instructor</p>
+                        </div>
+                    </div>
+                    <div class="teacher-item-box">
+                        <div class="img-container">
+                            <picture>
+                                <source srcset="./media/img/teachers/rogers.webp 1x, ./media/img/teachers/rogers@2x.webp 2x, ./media/img/teachers/rogers@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/rogers.jpg" srcset="./media/img/teachers/rogers@2x.jpg 2x, ./media/img/teachers/rogers@3x.jpg 3x" alt="Erin Rogers">
+                            </picture>
+                        </div>
+                        <div class="info-container">
+                            <a href="#">Erin Rogers</a>
+                            <p>Instructor</p>
+                        </div>
+                    </div>
+                    <div class="teacher-item-box">
+                        <div class="img-container">
+                            <picture>
+                                <source srcset="./media/img/teachers/taylor.webp 1x, ./media/img/teachers/taylor@2x.webp 2x, ./media/img/teachers/taylor@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/taylor.jpg" srcset="./media/img/teachers/taylor@2x.jpg 2x, ./media/img/teachers/taylor@3x.jpg 3x" alt="Jessica Taylor">
+                            </picture>
+                        </div>
+                        <div class="info-container">
+                            <a href="#">Jessica Taylor</a>
+                            <p>Instructor</p>
+                        </div>
+                    </div>
+                    <div class="teacher-item-box">
+                        <div class="img-container">
+                            <picture>
+                                <source srcset="./media/img/teachers/delaune.webp 1x, ./media/img/teachers/delaune@2x.webp 2x, ./media/img/teachers/delaune@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/teachers/delaune.jpg" srcset="./media/img/teachers/delaune@2x.jpg 2x, ./media/img/teachers/delaune@3x.jpg 3x" alt="Todd Delaune">
+                            </picture>
+                        </div>
+                        <div class="info-container">
+                            <a href="#">Todd Delaune</a>
+                            <p>Instructor</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="wr-renewal">
+            <div class="custom-container">
+                <div class="wr-renewal-description">
+                    <h3>2020 Renewal Series</h3>
+                    <p>Finally, a resolution you can stick to. Reconnect with your fitness goals in 2017 with four classes designed to ease you back into your routine.</p>
+                    <button class="promo-btn">Take this challenge</button>
+                </div>
+                <div class="wr-picture">
+                    <picture>
+                        <source srcset="./media/img/woman-transparent.webp" type="image/webp">
+                        <img src="./media/img/woman-transparent.png" alt="Picture of a woman">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="wr-companies-list">
+            <div class="custom-container">
+                <div class="swiper-container gallery-bottom">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./media/img/companies/bearbrand.png" alt="bearbrand logo">
+                            <a href="#" target="_blank"></a>
+                        </div>
+                        <div class="swiper-slide"><img src="./media/img/companies/hipsters.png" alt="hipsters logo">
+                            <a href="#" target="_blank"></a>
+                        </div>
+                        <div class="swiper-slide"><img src="./media/img/companies/hsh.png" alt="hsh logo">
+                            <a href="#" target="_blank"></a>
+                        </div>
+                        <div class="swiper-slide"><img src="./media/img/companies/restaurant.png" alt="restaurant logo">
+                            <a href="#" target="_blank"></a>
+                        </div>
+                        <div class="swiper-slide"><img src="./media/img/companies/authentic.png" alt="authentic logo">
+                            <a href="#" target="_blank"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="swiper-button-left">
-            <svg class="btn-left" viewBox="0 0 320 512">
-                <path  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
-        </div>
-        <div class="swiper-button-right">
-            <svg class="btn-right" viewBox="0 0 320 512">
-                <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
-        </div>
-    </section>
-    <section class="wr-access">
-        <div class="custom-container">
-            <h3>Tap into your inner fountain of youth.</h3>
-            <p>Access hundreds of yoga classes shot in natural studios around the world. Unlimited access for $15/month.</p>
-            <button class="promo-btn">Start your 14-day free trial</button>
-            <div class="wr-access-img">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/access/first-img.webp 1x, ./media/img/access/first-img@2x.webp 2x, ./media/img/access/first-img@3x.webp 3x" type="image/webp">
-                        <img class="first-img" src="./media/img/access/first-img.jpg" srcset="./media/img/access/first-img@2x.jpg 2x, ./media/img/access/first-img@3x.jpg 3x" alt="Training image">
-                    </picture>
-                </div>
-                <div class="img-container second-img">
-                    <picture>
-                        <source srcset="./media/img/access/second-img.webp 1x, ./media/img/access/second-img@2x.webp 2x, ./media/img/access/second-img@3x.webp 3x" type="image/webp">
-                        <img class="second-img" src="./media/img/access/second-img.jpg" srcset="./media/img/access/second-img@2x.jpg 2x, ./media/img/access/second-img@3x.jpg 3x" alt="Training image">
-                    </picture>
-                </div>
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/access/third-img.webp 1x, ./media/img/access/third-img@2x.webp 2x, ./media/img/access/third-img@3x.webp 3x" type="image/webp">
-                        <img class="third-img" src="./media/img/access/third-img.jpg" srcset="./media/img/access/third-img@2x.jpg 2x, ./media/img/access/third-img@3x.jpg 3x" alt="Training image">
-                    </picture>
-                </div>
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/access/fourth-img.webp 1x, ./media/img/access/fourth-img@2x.webp 2x, ./media/img/access/fourth-img@3x.webp 3x" type="image/webp">
-                        <img class="fourth-img" src="./media/img/access/fourth-img@2x.jpg" srcset="./media/img/access/fourth-img@2x.jpg 2x, ./media/img/access/fourth-img@3x.jpg 3x" alt="Training image">
-                    </picture>
-                </div>
-                <div class="img-container fifth-img">
-                    <picture>
-                        <source srcset="./media/img/access/fifth-img.webp 1x, ./media/img/access/fifth-img@2x.webp 2x, ./media/img/access/fifth-img@3x.webp 3x" type="image/webp">
-                        <img class="fifth-img" src="./media/img/access/fifth-img.jpg" srcset="./media/img/access/fifth-img@2x.jpg 2x, ./media/img/access/fifth-img@3x.jpg 3x" alt="Training image">
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="wr-teacher-introduction">
-        <div class="custom-container">
-            <h3>The most experienced yoga instructors</h3>
-            <p>Our mission is to bring the communities of Brookhaven, Dunwoody, Old Fourth Ward, and Buckhead a knowledgeable, welcoming, and comfortable place to practice yoga and to enhance your well-being and general approach to holistic health.
-            </p>
-            <span>Meet our teacher</span>
-            <img src="./media/img/arrow-down.png">
-        </div>
-    </section>
-    <section class="wr-teacher-list">
-        <div class="custom-container">
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/nickerson.webp 1x, ./media/img/teachers/nickerson@2x.webp 2x, ./media/img/teachers/nickerson@3x.webp 3x" type="image/webp">
-                        <img class="first-img" src="./media/img/teachers/nickerson.jpg" srcset="./media/img/teachers/nickerson@2x.jpg 2x, ./media/img/teachers/nickerson@3x.jpg 3x" alt="Becky Nickerson">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Becky Nickerson</h6>
-                    <p>Owner/Lead Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/harkness.webp 1x, ./media/img/teachers/harkness@2x.webp 2x, ./media/img/teachers/harkness@3x.webp 3x" type="image/webp">
-                        <img class="second-img" src="./media/img/teachers/harkness.jpg" srcset="./media/img/teachers/harkness@2x.jpg 2x, ./media/img/teachers/harkness@3x.jpg 3x" alt="Taylor Harkness">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Taylor Harkness</h6>
-                    <p>Owner/Lead Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/skubic.webp 1x, ./media/img/teachers/skubic@2x.webp 2x, ./media/img/teachers/skubic@3x.webp 3x" type="image/webp">
-                        <img class="third-img" src="./media/img/teachers/skubic.jpg" srcset="./media/img/teachers/skubic@2x.jpg 2x, ./media/img/teachers/skubic@3x.jpg 3x" alt="Natalie Skubic">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Natalie Skubic</h6>
-                    <p>Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/hesse.webp 1x, ./media/img/teachers/hesse@2x.webp 2x, ./media/img/teachers/hesse@3x.webp 3x" type="image/webp">
-                        <img class="fourth-img" src="./media/img/teachers/hesse.jpg" srcset="./media/img/teachers/hesse@2x.jpg 2x, ./media/img/teachers/hesse@3x.jpg 3x" alt="Meredith Hesse">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Meredith Hesse</h6>
-                    <p>Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/sousa.webp 1x, ./media/img/teachers/sousa@2x.webp 2x, ./media/img/teachers/sousa@3x.webp 3x" type="image/webp">
-                        <img class="fifth-img" src="./media/img/teachers/sousa.jpg" srcset="./media/img/teachers/sousa@2x.jpg 2x, ./media/img/teachers/sousa@3x.jpg 3x" alt="Jeff Sousa">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Jeff Sousa</h6>
-                    <p>Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/lorenzo.webp 1x, ./media/img/teachers/lorenzo@2x.webp 2x, ./media/img/teachers/lorenzo@3x.webp 3x" type="image/webp">
-                        <img class="sixth-img" src="./media/img/teachers/lorenzo.jpg" srcset="./media/img/teachers/lorenzo@2x.jpg 2x, ./media/img/teachers/lorenzo@3x.jpg 3x" alt="Ashley Lorenzo">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Ashley Lorenzo</h6>
-                    <p>Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/calderon.webp 1x, ./media/img/teachers/calderon@2x.webp 2x, ./media/img/teachers/calderon@3x.webp 3x" type="image/webp">
-                        <img class="seventh-img" src="./media/img/teachers/calderon.jpg" srcset="./media/img/teachers/calderon@2x.jpg 2x, ./media/img/teachers/calderon@3x.jpg 3x" alt="Jessica Calderon">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Jessica Calderon</h6>
-                    <p>Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/johnson.webp 1x, ./media/img/teachers/johnson@2x.webp 2x, ./media/img/teachers/johnson@3x.webp 3x" type="image/webp">
-                        <img class="eighth-img" src="./media/img/teachers/johnson.jpg" srcset="./media/img/teachers/johnson@2x.jpg 2x, ./media/img/teachers/johnson@3x.jpg 3x" alt="Doug Johnson">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Doug Johnson</h6>
-                    <p>Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/caplan.webp 1x, ./media/img/teachers/caplan@2x.webp 2x, ./media/img/teachers/caplan@3x.webp 3x" type="image/webp">
-                        <img class="ninth-img" src="./media/img/teachers/caplan.jpg" srcset="./media/img/teachers/caplan@2x.jpg 2x, ./media/img/teachers/caplan@3x.jpg 3x" alt="Sharon Caplan">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Sharon Caplan</h6>
-                    <p>Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/rogers.webp 1x, ./media/img/teachers/rogers@2x.webp 2x, ./media/img/teachers/rogers@3x.webp 3x" type="image/webp">
-                        <img class="tenth-img" src="./media/img/teachers/rogers.jpg" srcset="./media/img/teachers/rogers@2x.jpg 2x, ./media/img/teachers/rogers@3x.jpg 3x" alt="Erin Rogers">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Erin Rogers</h6>
-                    <p>Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/taylor.webp 1x, ./media/img/teachers/taylor@2x.webp 2x, ./media/img/teachers/taylor@3x.webp 3x" type="image/webp">
-                        <img class="eleventh-img" src="./media/img/teachers/taylor.jpg" srcset="./media/img/teachers/taylor@2x.jpg 2x, ./media/img/teachers/taylor@3x.jpg 3x" alt="Jessica Taylor">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Jessica Taylor</h6>
-                    <p>Instructor</p>
-                </div>
-            </div>
-            <div class="teacher-item-box">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./media/img/teachers/delaune.webp 1x, ./media/img/teachers/delaune@2x.webp 2x, ./media/img/teachers/delaune@3x.webp 3x" type="image/webp">
-                        <img class="tvelfth-img" src="./media/img/teachers/delaune.jpg" srcset="./media/img/teachers/delaune@2x.jpg 2x, ./media/img/teachers/delaune@3x.jpg 3x" alt="Todd Delaune">
-                    </picture>
-                </div>
-                <div class="info-container">
-                    <h6>Todd Delaune</h6>
-                    <p>Instructor</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="wr-renewal">
-        <div class="custom-container">
-            <div class="wr-renewal-description">
-                <h3>2020 Renewal Series</h3>
-                <p>Finally, a resolution you can stick to. Reconnect with your fitness goals in 2017 with four classes designed to ease you back into your routine.</p>
-                <button class="promo-btn">Take this challenge</button>
-            </div>
-            <div class="wr-picture">
-                <picture>
-                    <source srcset="./media/img/woman-transparent.webp" type="image/webp">
-                    <img src="./media/img/woman-transparent.png" alt="Picture of a woman">
-                </picture>
-            </div>
-        </div>
-    </section>
-    <section class="wr-companies-list">
-        <div class="custom-container">
-            <div class="swiper-container gallery-bottom">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./media/img/companies/bearbrand.png" alt="bearbrand logo"></div>
-                    <div class="swiper-slide"><img src="./media/img/companies/hipsters.png" alt="hipsters logo"></div>
-                    <div class="swiper-slide"><img src="./media/img/companies/hsh.png" alt="hsh logo"></div>
-                    <div class="swiper-slide"><img src="./media/img/companies/restaurant.png" alt="restaurant logo"></div>
-                    <div class="swiper-slide"><img src="./media/img/companies/authentic.png" alt="authentic logo"></div>
-                </div>
-            </div>
-    </section>
+        </section>
+    </main>
     <footer>
-        <div class="wr-subscribe">
+        <section class="wr-subscribe">
             <div class="custom-container">
                 <div class="wr-logo">
                     <a class="logo" href="./index.html"></a>
@@ -505,21 +531,115 @@
                 <div class="wr-contact-form">
                     <div class="wr-contact-form-text">
                         <h6>Subscribe</h6>
-                        <p>To receive the lastest freebies in your inbox</p>
+                        <p>To receive the latest freebies in your inbox</p>
                     </div>
-
                     <form action="https://formspree.io/f/xvovaezv" method="POST">
                         <input type="email" id="subscription" name="subscription" placeholder="Your Address Email" maxlength="180" required>
                         <button type="submit">subscribe</button>
                     </form>
-
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="wr-other-details">
+            <div class="custom-container">
+                <div class="wr-contact-us">
+                    <h6>Contact Us</h6>
+                    <p>PO Box 16122 Collins Street West, Victoria 8007 Australia</p>
+                    <a href="mailto:Alitstudios@gmai.com">alitstudios@gmai.com</a>
+                    <a href="tel:+61383766284">+61 3 8376 6284</a>
+                    <div class="socials-box">
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <svg viewBox="0 0 320 512">
+                            <path  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                        </svg></a>
+                        <a class="twitter" href="https://twitter.com/" target="_blank">
+                            <svg viewBox="0 0 512 512">
+                            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                        </svg></a>
+                        <a class="g-plus" href="https://www.google.com/" target="_blank">
+                            <svg viewBox="0 0 640 512">
+                            <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"></path>
+                        </svg></a>
+                        <a class="pinterest" href="https://www.pinterest.com/" target="_blank">
+                            <svg viewBox="0 0 384 512">
+                            <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="wr-useful-links">
+                    <h6>Useful Links</h6>
+                    <ul>
+                        <li><a href="#">Abous Us</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Terms &amp;  Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="wr-open-hours">
+                    <h6>Open Hours</h6>
+                    <div class="wr-working-day">
+                        <p>Monday</p>
+                        <svg viewBox="0 0 320 512">
+                            <path  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                        </svg>
+                        <p>11am - 2pm</p>
+                    </div>
+                    <div class="wr-working-day">
+                        <p>Tuesday</p>
+                        <svg viewBox="0 0 320 512">
+                            <path  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                        </svg>
+                        <p>8am - 10pm</p>
+                    </div>
+                    <div class="wr-working-day">
+                        <p>Wednesday</p>
+                        <svg viewBox="0 0 320 512">
+                            <path  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                        </svg>
+                        <p>11am - 12pm</p>
+                    </div>
+                    <div class="wr-working-day">
+                        <p>Thursday</p>
+                        <svg viewBox="0 0 320 512">
+                            <path  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                        </svg>
+                        <p>11am - 12pm</p>
+                    </div>
+                    <div class="wr-working-day">
+                        <p>Friday</p>
+                        <svg viewBox="0 0 320 512">
+                            <path  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                        </svg>
+                        <p>10am - 2pm</p>
+                    </div>
+                    <div class="wr-working-day">
+                        <p>Saturday</p>
+                        <svg viewBox="0 0 320 512">
+                            <path  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                        </svg>
+                        <p>10am - 2pm</p>
+                    </div>
+                    <div class="wr-working-day">
+                        <p>Sunday</p>
+                        <svg viewBox="0 0 320 512">
+                            <path  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                        </svg>
+                        <p>Closed</p>
+                    </div>
+                </div>
+                <div class="wr-location">
+                    <h6>Our Location</h6>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.693667617128!2d144.9462795150622!3d-37.820643642209575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4cee0cec83%3A0xd019c5f69915a4a0!2sCollins%20St%2C%20West%20Melbourne%20VIC%203003%2C%20Australia!5e0!3m2!1sen!2sby!4v1603917476334!5m2!1sen!2sby"></iframe>
+                </div>
+            </div>
+        </section>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

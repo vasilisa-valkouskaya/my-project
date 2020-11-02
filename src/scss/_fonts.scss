@@ -32,3 +32,8 @@
     font-family: "Poppins Regular";
     src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-bold-webfont.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("opentype");
 }
+
+@font-face {
+    font-family: "Droid Serif Italic";
+    src: local("Droid Serif Italic"), url("../fonts/droid-serif-italic.woff2") format("woff2"), url("../fonts/lato-italic-webfont.woff") format("woff"), url("../fonts/droid-serif-italic.ttf") format("opentype");
+}
