@@ -102,8 +102,8 @@ nav {
     .burger-menu {
         display: block;
         position: relative;
-        width: 35px;
-        height: 30px;
+        width: 30px;
+        height: 20px;
         cursor: pointer;
         span {
             display: block;
@@ -129,7 +129,7 @@ nav {
         transition-duration: 0.4s;
     }
     .burger-menu span::before {
-        top: -13px;
+        top: -8px;
     }
     .burger-menu.active span::before {
         top: 0;
@@ -143,7 +143,7 @@ nav {
         background-color: transparent;
     }
     .burger-menu span::after {
-        bottom: -13px;
+        bottom: -8px;
     }
     .mobile-menu {
         position: fixed;
@@ -156,7 +156,7 @@ nav {
         transition-duration: 0.5s;
         overflow: hidden;
         ul {
-            padding-top: 85px;
+            padding-top: 75px;
             flex-direction: column;
             font-size: 20px;
             align-items: flex-start;
@@ -170,8 +170,16 @@ nav {
     }
 }
 
-@media all and (orientation: landscape) {
+@media all and (max-width: 667px) and (orientation: landscape) {
     .mobile-menu {
-        overflow: scroll;
+        ul {
+            padding-top: 60px;
+            flex-direction: column;
+            font-size: 16px;
+            align-items: flex-start;
+        }
+        li {
+            margin-bottom: 15px;
+        }
     }
 }

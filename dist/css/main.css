@@ -1755,8 +1755,8 @@ nav button {
   .burger-menu {
     display: block;
     position: relative;
-    width: 35px;
-    height: 30px;
+    width: 30px;
+    height: 20px;
     cursor: pointer;
   }
 
@@ -1785,7 +1785,7 @@ nav button {
   }
 
   .burger-menu span::before {
-    top: -13px;
+    top: -8px;
   }
 
   .burger-menu.active span::before {
@@ -1803,7 +1803,7 @@ nav button {
   }
 
   .burger-menu span::after {
-    bottom: -13px;
+    bottom: -8px;
   }
 
   .mobile-menu {
@@ -1819,7 +1819,7 @@ nav button {
   }
 
   .mobile-menu ul {
-    padding-top: 85px;
+    padding-top: 75px;
     flex-direction: column;
     font-size: 20px;
     align-items: flex-start;
@@ -1835,6 +1835,19 @@ nav button {
 
   .wr-slogan {
     padding-top: 30vh;
+  }
+}
+
+@media all and (max-width: 667px) and (orientation: landscape) {
+  .mobile-menu ul {
+    padding-top: 60px;
+    flex-direction: column;
+    font-size: 16px;
+    align-items: flex-start;
+  }
+
+  .mobile-menu li {
+    margin-bottom: 15px;
   }
 }
 
@@ -1907,6 +1920,7 @@ nav button {
 @media all and (max-width: 569px) {
   form input {
     max-width: 280px;
+    min-height: 49px;
   }
 
   form button {
@@ -1962,11 +1976,5 @@ nav button {
 
   form button {
     max-width: 100px;
-  }
-}
-
-@media all and (orientation: landscape) {
-  .mobile-menu {
-    overflow: scroll;
   }
 }
