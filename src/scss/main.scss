@@ -205,6 +205,9 @@
         top: 50%;
         transform: translateY(-50%);
         left: 54px;
+    @media all and (max-width: 580px) {
+        width: 70%; 
+    }
     }
     progress::-webkit-progress-bar {
         background: transparent;

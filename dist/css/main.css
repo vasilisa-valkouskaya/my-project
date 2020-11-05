@@ -1883,6 +1883,10 @@ nav button {
   .video-container {
     width: 100%;
   }
+
+  .video-container progress {
+    width: 70%;
+  }
 }
 
 @media all and (max-width: 575px) {
