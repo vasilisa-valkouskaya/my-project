@@ -8,12 +8,32 @@
     background: url("../media/img/top-background.png") no-repeat;
     background-size: cover;
     background-position: bottom;
+    @media all and (max-width: 1024px), all and (orientation: portrait) {
+        height: 600px;
+    }
+    @media all and (max-width: 600px),
+    all and (orientation: portrait) {
+        height: 450px;
+    }
+    @media all and (max-width: 375px) {
+        height: 400px;
+    }
 }
 
 .wr-slogan {
     padding-top: 15vh;
-    @media all and (max-height: 700px), all and (orientation: landscape) {
+    @media all and (max-width: 1700px) {
         padding-top: 5vh;
+    }
+    @media all and (max-width: 1200px) {
+        margin-right: 5%;
+    }
+    @media all and (max-width: 768px) {
+        padding-top: 30vh;
+    }
+    @media all and (max-width: 600px),
+    all and (orientation: portrait) {
+        padding-top: 20vh;
     }
     h2 {
         font-family: "Poppins Light", sans-serif;
@@ -23,9 +43,24 @@
         text-align: right;
         margin-top: 0px;
         margin-bottom: 17px;
+        @media all and (max-width: 1200px) {
+            font-size: 48px;
+        }
+        @media all and (max-width: 650px) {
+            font-size: 36px;
+        }
+        @media all and (max-width: 500px) {
+            font-size: 30px;
+        }
+        @media all and (max-width: 375px) {
+            font-size: 25px;
+        }
     }
     h2.first-slogan {
         margin-right: 63px;
+        @media all and (max-width: 650px) {
+            margin-right: 0;
+        }
     }
     h2.second-slogan {
         margin-right: -7px;
@@ -55,6 +90,9 @@
         color: $main-color;
         font-weight: 100;
         margin-bottom: 8px;
+        @media all and (max-width: 413px) {
+            font-size: 36px;
+        }
     }
     p {
         font-size: 14px;
@@ -72,6 +110,9 @@
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
+    @media all and (max-width: 580px) {
+        width: 100%;
+    }
     &:hover .controls {
         bottom: 0;
         transition-duration: 0.4s;
@@ -361,7 +402,7 @@
         margin-bottom: 19px;
     }
     p {
-        width: 450px;
+        max-width: 450px;
         line-height: 24px;
         font-size: 14px;
         color: #666;
@@ -437,7 +478,7 @@
         margin-bottom: 20px;
     }
     p {
-        width: 545px;
+        max-width: 545px;
         line-height: 24px;
         font-size: 14px;
         color: #fff;
@@ -531,7 +572,7 @@
             margin-bottom: 4px;
         }
         p {
-            width: 455px;
+            max-width: 455px;
             font-size: 21px;
             line-height: 36px;
             color: $main-color;
@@ -582,7 +623,7 @@
     background-position: bottom;
     .custom-container {
         padding-top: 140px;
-        padding-bottom: 125px;
+        padding-bottom: 122px;
     }
     h3 {
         font-size: 72px;
@@ -679,7 +720,7 @@
         background-repeat: no-repeat;
         background-position: top center;
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 113px;
     }
 }
 
@@ -727,6 +768,105 @@
     }
 }
 
+.wr-features {
+    background-color: #e5eaf7;
+    .custom-container {
+        padding-top: 125px;
+        padding-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .swiper-container {
+        width: 600px;
+        text-align: center;
+        margin-bottom: 77px;
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 31px;
+        }
+        h5 {
+            font-family: "Poppins SemiBold", sans-serif;
+            font-size: 16px;
+            color: $main-color;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: $link-color;
+            margin-bottom: 23px;
+            line-height: 24px;
+        }
+        .quote-author {
+            font-size: 12px;
+        }
+        h6 {
+            font-size: 14px;
+            color: $main-color;
+        }
+        picture {
+            width: 60px;
+            height: 60px;
+            display: block;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+    .counter-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        .counter {
+            font-family: "Droid Serif Regular", serif;
+            font-size: 42px;
+            color: $main-color;
+        }
+        p {
+            font-size: 14px;
+            color: $link-color;
+            margin-top: 11px;
+        }
+    }
+}
+
+.wr-promo-access {
+    padding-top: 116px;
+    padding-bottom: 120px;
+    .custom-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h3 {
+        font-size: 32px;
+        color: #000000;
+        margin-bottom: 19px;
+    }
+    p {
+        width: 450px;
+        line-height: 24px;
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+        margin-bottom: 47px;
+    }
+    button {
+        width: 300px;
+        margin-bottom: 80px;
+    }
+}
+
 @media all and (max-width: 1250px) {
     .wr-access-img {
         grid-gap: 15px;
@@ -743,11 +883,25 @@
 
 @media all and (max-width: 1190px) {
     .wr-access-img {
-        grid-template-columns: repeat(2, 370px);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 270px);
         .img-container:nth-child(5) {
             grid-row: 2;
             grid-column: 2;
+        }
+    }
+}
+
+@media all and (max-width: 585px) {
+    .wr-access-img {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 270px);
+        .img-container:nth-child(4) {
+            grid-row: 5;
+            grid-column: 1;
+        }
+        .img-container:nth-child(5) {
+            grid-column: 1;
         }
     }
 }
@@ -766,5 +920,68 @@
     }
     .benefit-item-box {
         margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 969px) {
+    .wr-contact-form {
+        flex-direction: column;
+        .wr-contact-form-text {
+            margin-bottom: 20px;
+        }
+        form {
+            margin-left: 0;
+            padding-left: 45px;
+        }
+    }
+    .wr-other-details .custom-container {
+        flex-wrap: wrap;
+    }
+    .wr-contact-us,
+    .wr-useful-links,
+    .wr-open-hours,
+    .wr-location {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .wr-renewal {
+        .custom-container {
+            text-align: center;
+        }
+        .wr-picture {
+            display: none;
+        }
+        .wr-renewal-description {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            margin: 0;
+            h3 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 640px) {
+    h3 {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .wr-contact-us,
+    .wr-useful-links,
+    .wr-open-hours,
+    .wr-location {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .wr-location iframe {
+        min-width: 100%;
     }
 }

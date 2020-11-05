@@ -236,14 +236,6 @@ p {
   overflow: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h6 {
-  white-space: nowrap;
-}
-
 h3 {
   font-family: "Poppins Light", sans-serif;
   font-weight: 100;
@@ -294,12 +286,17 @@ p {
 
 @font-face {
   font-family: "Poppins Regular";
-  src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-bold-webfont.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("opentype");
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("opentype");
 }
 
 @font-face {
   font-family: "Droid Serif Italic";
-  src: local("Droid Serif Italic"), url("../fonts/droid-serif-italic.woff2") format("woff2"), url("../fonts/lato-italic-webfont.woff") format("woff"), url("../fonts/droid-serif-italic.ttf") format("opentype");
+  src: local("Droid Serif Italic"), url("../fonts/droid-serif-italic.woff2") format("woff2"), url("../fonts/droid-serif-italic.woff") format("woff"), url("../fonts/droid-serif-italic.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Droid Serif Regular";
+  src: local("Droid Serif Regular"), url("../fonts/droid-serif.woff2") format("woff2"), url("../fonts/droid-serif.woff") format("woff"), url("../fonts/droid-serif.ttf") format("opentype");
 }
 
 header {
@@ -323,6 +320,11 @@ header .wr-logo .logo {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+header .wr-logo img {
+  width: 100%;
+  height: 100%;
 }
 
 .sticky {
@@ -361,6 +363,11 @@ nav button {
   width: 198px;
 }
 
+.burger-menu {
+  display: none;
+  z-index: 35;
+}
+
 .wr-subscribe {
   background-color: #181818;
   border-bottom: solid 2px #333;
@@ -378,6 +385,10 @@ nav button {
      object-fit: contain;
 }
 
+.wr-subscribe .wr-logo img {
+  width: 100%;
+}
+
 .wr-subscribe .wr-logo .logo {
   position: absolute;
   top: 0;
@@ -390,6 +401,7 @@ nav button {
   margin-left: 18%;
   border-left: solid 2px #333;
   display: flex;
+  padding: 22px 0;
 }
 
 .wr-contact-form .wr-contact-form-text {
@@ -1020,7 +1032,7 @@ nav button {
 }
 
 .wr-access p {
-  width: 450px;
+  max-width: 450px;
   line-height: 24px;
   font-size: 14px;
   color: #666;
@@ -1107,7 +1119,7 @@ nav button {
 }
 
 .wr-teacher-introduction p {
-  width: 545px;
+  max-width: 545px;
   line-height: 24px;
   font-size: 14px;
   color: #fff;
@@ -1216,7 +1228,7 @@ nav button {
 }
 
 .wr-renewal .wr-renewal-description p {
-  width: 455px;
+  max-width: 455px;
   font-size: 21px;
   line-height: 36px;
   color: #7492ec;
@@ -1270,7 +1282,7 @@ nav button {
 
 .wr-about-intro .custom-container {
   padding-top: 140px;
-  padding-bottom: 125px;
+  padding-bottom: 122px;
 }
 
 .wr-about-intro h3 {
@@ -1377,7 +1389,7 @@ nav button {
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 113px;
 }
 
 .training-type {
@@ -1432,6 +1444,129 @@ nav button {
   line-height: 24px;
 }
 
+.wr-features {
+  background-color: #e5eaf7;
+}
+
+.wr-features .custom-container {
+  padding-top: 125px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wr-features .swiper-container {
+  width: 600px;
+  text-align: center;
+  margin-bottom: 77px;
+}
+
+.wr-features .swiper-container .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 31px;
+}
+
+.wr-features .swiper-container h5 {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 16px;
+  color: #7492ec;
+  margin-bottom: 10px;
+}
+
+.wr-features .swiper-container p {
+  font-size: 16px;
+  color: #99aade;
+  margin-bottom: 23px;
+  line-height: 24px;
+}
+
+.wr-features .swiper-container .quote-author {
+  font-size: 12px;
+}
+
+.wr-features .swiper-container h6 {
+  font-size: 14px;
+  color: #7492ec;
+}
+
+.wr-features .swiper-container picture {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.wr-features .swiper-container picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.wr-features .counter-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.wr-features .counter-box .counter {
+  font-family: "Droid Serif Regular", serif;
+  font-size: 42px;
+  color: #7492ec;
+}
+
+.wr-features .counter-box p {
+  font-size: 14px;
+  color: #99aade;
+  margin-top: 11px;
+}
+
+.wr-promo-access {
+  padding-top: 116px;
+  padding-bottom: 120px;
+}
+
+.wr-promo-access .custom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wr-promo-access h3 {
+  font-size: 32px;
+  color: #000000;
+  margin-bottom: 19px;
+}
+
+.wr-promo-access p {
+  width: 450px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.wr-promo-access button {
+  width: 300px;
+  margin-bottom: 80px;
+}
+
+@media all and (max-width: 1700px) {
+  .wr-slogan {
+    padding-top: 5vh;
+  }
+}
+
 @media all and (max-width: 1250px) {
   .wr-access-img {
     grid-gap: 15px;
@@ -1448,9 +1583,23 @@ nav button {
   }
 }
 
+@media all and (max-width: 1200px) {
+  .wr-slogan {
+    margin-right: 5%;
+  }
+
+  .wr-slogan h2 {
+    font-size: 48px;
+  }
+}
+
 @media all and (max-width: 1190px) {
+  .wr-contact-form .wr-contact-form-text {
+    padding-right: 0px;
+  }
+
   .wr-access-img {
-    grid-template-columns: repeat(2, 370px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 270px);
   }
 
@@ -1461,6 +1610,10 @@ nav button {
 }
 
 @media all and (max-width: 1120px) {
+  .wr-contact-form {
+    margin-left: 10%;
+  }
+
   .wr-renewal .wr-picture {
     right: 10px;
   }
@@ -1486,8 +1639,323 @@ nav button {
   }
 }
 
-@media all and (max-height: 700px), all and (orientation: landscape) {
+@media all and (max-width: 1025px) {
+  .wr-contact-form {
+    margin-left: 5%;
+  }
+}
+
+@media all and (max-width: 1024px), all and (orientation: portrait) {
+  .wr-introduction {
+    height: 600px;
+  }
+}
+
+@media all and (max-width: 969px) {
+  .wr-contact-form {
+    flex-direction: column;
+  }
+
+  .wr-contact-form .wr-contact-form-text {
+    margin-bottom: 20px;
+  }
+
+  .wr-contact-form form {
+    margin-left: 0;
+    padding-left: 45px;
+  }
+
+  .wr-other-details .custom-container {
+    flex-wrap: wrap;
+  }
+
+  .wr-contact-us,
+  .wr-useful-links,
+  .wr-open-hours,
+  .wr-location {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 934px) {
+  header {
+    font-size: 14px;
+    font-weight: 100;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .wr-renewal .custom-container {
+    text-align: center;
+  }
+
+  .wr-renewal .wr-picture {
+    display: none;
+  }
+
+  .wr-renewal .wr-renewal-description {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 0;
+  }
+
+  .wr-renewal .wr-renewal-description h3 {
+    font-size: 36px;
+  }
+
+  .wr-renewal .wr-renewal-description p {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 895px) {
+  header {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 854px) {
+  header {
+    padding: 30px 30px;
+  }
+
+  .sticky {
+    padding: 0 30px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 35;
+  }
+
+  header .wr-logo {
+    height: 40px;
+    width: 40px;
+    z-index: 35;
+  }
+
+  header::before {
+    content: '';
+    background-color: #e8eef6;
+    z-index: 30;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .burger-menu {
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .burger-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #7492ec;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .burger-menu span::before,
+  .burger-menu span::after {
+    content: '';
+    background-color: #7492ec;
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+  }
+
+  .burger-menu span::before {
+    top: -13px;
+  }
+
+  .burger-menu.active span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .burger-menu.active span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  .burger-menu.active span {
+    background-color: transparent;
+  }
+
+  .burger-menu span::after {
+    bottom: -13px;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f6fa;
+    z-index: 25;
+    transition-duration: 0.5s;
+  }
+
+  .mobile-menu ul {
+    padding-top: 100px;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: flex-start;
+  }
+
+  .mobile-menu li {
+    margin-bottom: 35px;
+  }
+
+  .mobile-menu.show {
+    top: 0;
+  }
+
   .wr-slogan {
-    padding-top: 5vh;
+    padding-top: 30vh;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .wr-slogan h2 {
+    font-size: 36px;
+  }
+
+  .wr-slogan h2.first-slogan {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 640px) {
+  h3 {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 600px), all and (orientation: portrait) {
+  .wr-introduction {
+    height: 450px;
+  }
+
+  .wr-slogan {
+    padding-top: 20vh;
+  }
+}
+
+@media all and (max-width: 585px) {
+  .wr-access-img {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 270px);
+  }
+
+  .wr-access-img .img-container:nth-child(4) {
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  .wr-access-img .img-container:nth-child(5) {
+    grid-column: 1;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .video-container {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .wr-contact-us,
+  .wr-useful-links,
+  .wr-open-hours,
+  .wr-location {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .wr-location iframe {
+    min-width: 100%;
+  }
+}
+
+@media all and (max-width: 569px) {
+  form input {
+    max-width: 280px;
+  }
+
+  form button {
+    max-width: 120px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .wr-slogan h2 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 484px) {
+  .wr-subscribe .wr-logo {
+    display: none;
+  }
+
+  .wr-contact-form {
+    margin: 0;
+    border: none;
+  }
+
+  .wr-contact-form .wr-contact-form-text {
+    padding: 0;
+  }
+
+  .wr-contact-form form {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 413px) {
+  .wr-description h1 {
+    font-size: 36px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .wr-introduction {
+    height: 400px;
+  }
+
+  .wr-slogan h2 {
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 355px) {
+  form input {
+    max-width: 230px;
+  }
+
+  form button {
+    max-width: 100px;
   }
 }

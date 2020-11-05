@@ -11,6 +11,12 @@ $text-color: #bbb;
         position: relative;
         width: 60px;
         object-fit: contain;
+        @media all and (max-width: 484px) {
+            display: none;
+        }
+        img {
+            width: 100%;
+        }
         .logo {
             position: absolute;
             top: 0;
@@ -25,21 +31,29 @@ $text-color: #bbb;
     margin-left: 18%;
     border-left: solid 2px $footer-color;
     display: flex;
-    // @media all and (max-width: 1120px) {
-    //     margin-left: 10%;
-    // }
-    // @media all and (max-width: 1025px) {
-    //     margin-left: 5%;
-    // }
+    padding: 22px 0;
+    @media all and (max-width: 1120px) {
+        margin-left: 10%;
+    }
+    @media all and (max-width: 1025px) {
+        margin-left: 5%;
+    }
+    @media all and (max-width: 484px) {
+        margin: 0;
+        border: none;
+    }
     .wr-contact-form-text {
         height: 100%;
         padding: 0 45px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // @media all and (max-width: 1190px) {
-        //     padding-right: 0px;
-        // }
+        @media all and (max-width: 1190px) {
+            padding-right: 0px;
+        }
+        @media all and (max-width: 484px) {
+            padding: 0;
+        }
         h6 {
             font-size: 16px;
             color: #fff;
@@ -60,6 +74,9 @@ $text-color: #bbb;
         margin-left: 27%;
         position: relative;
         right: 0;
+        @media all and (max-width: 484px) {
+            padding: 0;
+        }
         input {
             width: 355px;
             height: 49px;
@@ -214,6 +231,28 @@ $text-color: #bbb;
             height: 170px;
             border: none;
             border-radius: 5px;
+        }
+    }
+}
+
+@media all and (max-width: 569px) {
+    form {
+        input {
+            max-width: 280px;
+        }
+        button {
+            max-width: 120px;
+        }
+    }
+}
+
+@media all and (max-width: 355px) {
+    form {
+        input {
+            max-width: 230px;
+        }
+        button {
+            max-width: 100px;
         }
     }
 }

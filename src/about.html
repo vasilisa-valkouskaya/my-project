@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./media/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>About us</title>
 </head>
 
 <body>
     <section class="wr-about-intro">
-        <header>
+        <header class="header">
             <div class="wr-logo">
                 <a class="logo" href="./index.html"></a>
                 <img src="./media/img/logo.png" alt="logo">
             </div>
+
             <nav>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
@@ -101,11 +103,77 @@
                         movement with some support—from seniors to pregnant women to world-class athletes.</p>
                 </div>
             </div>
-
+        </section>
+        <section class="wr-features">
+            <div class="custom-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h5>So Many Features</h5>
+                            <p>Great template! Very fast and easy to configure. Intuitive interface, didn't even have to read the documentation. There were several questions that the author answered quickly. For customization themes no need to edit css.</p>
+                            <picture>
+                                <source srcset="./media/img/author.webp 1x, ./media/img/author@2x.webp 2x, ./media/img/author@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/author.jpg" srcset="./media/img/author@2x.jpg 2x, ./media/img/author@3x.jpg 3x" alt="Svetlin Denkov">
+                            </picture>
+                            <h6>Svetlin Denkov</h6>
+                            <p class="quote-author">Envato author</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>So Many Features</h5>
+                            <p>Great template! Very fast and easy to configure. Intuitive interface, didn't even have to read the documentation. There were several questions that the author answered quickly. For customization themes no need to edit css.</p>
+                            <picture>
+                                <source srcset="./media/img/author.webp 1x, ./media/img/author@2x.webp 2x, ./media/img/author@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/author.jpg" srcset="./media/img/author@2x.jpg 2x, ./media/img/author@3x.jpg 3x" alt="Svetlin Denkov">
+                            </picture>
+                            <h6>Svetlin Denkov</h6>
+                            <p class="quote-author">Envato author</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>So Many Features</h5>
+                            <p>Great template! Very fast and easy to configure. Intuitive interface, didn't even have to read the documentation. There were several questions that the author answered quickly. For customization themes no need to edit css.</p>
+                            <picture>
+                                <source srcset="./media/img/author.webp 1x, ./media/img/author@2x.webp 2x, ./media/img/author@3x.webp 3x" type="image/webp">
+                                <img src="./media/img/author.jpg" srcset="./media/img/author@2x.jpg 2x, ./media/img/author@3x.jpg 3x" alt="Svetlin Denkov">
+                            </picture>
+                            <h6>Svetlin Denkov</h6>
+                            <p class="quote-author">Envato author</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-item">
+                        <span class="counter" data-count="234"></span>
+                        <p>Designs Created</p>
+                    </div>
+                    <div class="counter-item">
+                        <span class="counter" data-count="123"></span>
+                        <p>Designs Created</p>
+                    </div>
+                    <div class="counter-item">
+                        <span class="counter" data-count="6789"></span>
+                        <p>Designs Created</p>
+                    </div>
+                    <div class="counter-item">
+                        <span class="counter" data-count="188"></span>
+                        <p>Designs Created</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wr-promo-access">
+            <div class="custom-container">
+                <h3>Tap into your inner fountain of youth.</h3>
+                <p>Access hundreds of yoga classes shot in natural studios around the world. Unlimited access for $15/month.</p>
+                <button class="promo-btn">Start your 14-day free trial</button>
+            </div>
         </section>
     </main>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/about.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
