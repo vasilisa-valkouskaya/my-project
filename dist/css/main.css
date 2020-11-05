@@ -1964,3 +1964,9 @@ nav button {
     max-width: 100px;
   }
 }
+
+@media all and (orientation: landscape) {
+  .mobile-menu {
+    overflow: scroll;
+  }
+}
