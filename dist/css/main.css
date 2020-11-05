@@ -436,6 +436,7 @@ nav button {
 }
 
 .wr-contact-form form input {
+  display: block;
   width: 355px;
   height: 50px;
   box-sizing: border-box;
@@ -1867,8 +1868,20 @@ nav button {
     padding-top: 30vh;
   }
 
+  .wr-training-types .custom-container {
+    padding-bottom: 0px;
+  }
+
+  .wr-features .custom-container {
+    padding: 60px 0;
+  }
+
   .wr-features .counter-box .counter {
     font-size: 32px;
+  }
+
+  .wr-promo-access {
+    padding-top: 60px;
   }
 }
 

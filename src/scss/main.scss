@@ -760,6 +760,9 @@
         background-position: top center;
         padding-top: 120px;
         padding-bottom: 113px;
+        @media all and (max-width: 768px) {
+            padding-bottom: 0px;
+        }
     }
 }
 
@@ -825,6 +828,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media all and (max-width: 768px) {
+            padding: 60px 0;
+        }
     }
     .swiper-container {
         width: 600px;
@@ -910,6 +916,9 @@
 .wr-promo-access {
     padding-top: 116px;
     padding-bottom: 35px;
+    @media all and (max-width: 768px) {
+        padding-top: 60px;
+    }
     .custom-container {
         display: flex;
         flex-direction: column;
