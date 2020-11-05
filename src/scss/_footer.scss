@@ -87,10 +87,7 @@ $text-color: #bbb;
             background-color: $footer-color;
             color: #fff;
             appearance: none;
-            @media all and (max-width: 900px) {
-                margin: 0;
-                padding: 0;
-            }
+            -webkit-appearance: none;
             &::placeholder {
                 font-family: "Lato Regular", sans-serif;
                 font-size: 13px;
