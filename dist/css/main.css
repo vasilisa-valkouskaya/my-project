@@ -437,7 +437,7 @@ nav button {
 
 .wr-contact-form form input {
   width: 355px;
-  height: 49px;
+  height: 50px;
   box-sizing: border-box;
   padding-left: 20px;
   border-radius: 25px;
@@ -1278,6 +1278,7 @@ nav button {
   background: url("../media/img/about-us-background.png");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
 }
 
 .wr-about-intro .custom-container {
@@ -1309,7 +1310,7 @@ nav button {
 }
 
 .wr-about-information .about-description {
-  max-width: 525px;
+  width: 525px;
   padding-top: 165px;
 }
 
@@ -1333,9 +1334,12 @@ nav button {
 }
 
 .wr-about-information .img-container img {
-  width: 525px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .wr-quote {
@@ -1361,7 +1365,7 @@ nav button {
   font-weight: 100;
   text-align: center;
   white-space: pre-wrap;
-  width: 630px;
+  max-width: 630px;
   margin-bottom: 47px;
   line-height: 35px;
 }
@@ -1384,6 +1388,7 @@ nav button {
 
 .wr-training-types .custom-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-image: url("../media/img/training-types-bg.png");
   background-repeat: no-repeat;
@@ -1393,7 +1398,7 @@ nav button {
 }
 
 .training-type {
-  width: 370px;
+  width: 30%;
 }
 
 .training-type .img-container {
@@ -1532,7 +1537,7 @@ nav button {
 
 .wr-promo-access {
   padding-top: 116px;
-  padding-bottom: 120px;
+  padding-bottom: 35px;
 }
 
 .wr-promo-access .custom-container {
@@ -1548,7 +1553,7 @@ nav button {
 }
 
 .wr-promo-access p {
-  width: 450px;
+  max-width: 450px;
   line-height: 24px;
   font-size: 14px;
   color: #666;
@@ -1639,6 +1644,13 @@ nav button {
   }
 }
 
+@media all and (max-width: 1050px) {
+  .wr-about-information .about-description {
+    width: 450px;
+    padding-top: 85px;
+  }
+}
+
 @media all and (max-width: 1025px) {
   .wr-contact-form {
     margin-left: 5%;
@@ -1648,6 +1660,13 @@ nav button {
 @media all and (max-width: 1024px), all and (orientation: portrait) {
   .wr-introduction {
     height: 600px;
+  }
+}
+
+@media all and (max-width: 975px) {
+  .wr-about-information .img-container {
+    width: 450px;
+    height: 420px;
   }
 }
 
@@ -1674,6 +1693,13 @@ nav button {
   .wr-open-hours,
   .wr-location {
     width: 50%;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .training-type {
+    width: 45%;
+    margin-bottom: 50px;
   }
 }
 
@@ -1711,6 +1737,10 @@ nav button {
 @media all and (max-width: 895px) {
   header {
     font-size: 12px;
+  }
+
+  .wr-about-information .img-container {
+    width: 350px;
   }
 }
 
@@ -1836,6 +1866,22 @@ nav button {
   .wr-slogan {
     padding-top: 30vh;
   }
+
+  .wr-features .counter-box .counter {
+    font-size: 32px;
+  }
+}
+
+@media all and (max-width: 745px) {
+  .wr-about-information .custom-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .wr-about-information .about-description {
+    padding-top: 45px;
+  }
 }
 
 @media all and (max-width: 667px) and (orientation: landscape) {
@@ -1859,11 +1905,28 @@ nav button {
   .wr-slogan h2.first-slogan {
     margin-right: 0;
   }
+
+  .training-type {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 645px) {
+  .wr-about-intro h3 {
+    font-size: 50px;
+    text-align: left;
+  }
 }
 
 @media all and (max-width: 640px) {
   h3 {
     text-align: center;
+  }
+}
+
+@media all and (max-width: 625px) {
+  .wr-features .swiper-container {
+    width: 100%;
   }
 }
 
@@ -1920,11 +1983,16 @@ nav button {
 @media all and (max-width: 569px) {
   form input {
     max-width: 280px;
-    height: 50px;
   }
 
   form button {
     max-width: 120px;
+  }
+}
+
+@media all and (max-width: 545px) {
+  .wr-about-intro h3 {
+    font-size: 40px;
   }
 }
 
@@ -1953,6 +2021,18 @@ nav button {
   }
 }
 
+@media all and (max-width: 480px) {
+  .wr-about-information .about-description {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .training-type {
+    width: 100%;
+  }
+}
+
 @media all and (max-width: 413px) {
   .wr-description h1 {
     font-size: 36px;
@@ -1969,6 +2049,20 @@ nav button {
   }
 }
 
+@media all and (max-width: 360px) {
+  .wr-about-information .img-container {
+    width: 100%;
+  }
+
+  .wr-features .counter-box .counter {
+    font-size: 20px;
+  }
+
+  .wr-features .counter-box p {
+    font-size: 10px;
+  }
+}
+
 @media all and (max-width: 355px) {
   form input {
     max-width: 230px;
@@ -1976,5 +2070,15 @@ nav button {
 
   form button {
     max-width: 100px;
+  }
+}
+
+@media all and (max-width: 340px) {
+  .wr-features .counter-box .counter {
+    font-size: 18px;
+  }
+
+  .wr-features .counter-box p {
+    font-size: 8px;
   }
 }

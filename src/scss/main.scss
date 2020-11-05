@@ -205,9 +205,9 @@
         top: 50%;
         transform: translateY(-50%);
         left: 54px;
-    @media all and (max-width: 580px) {
-        width: 65%; 
-    }
+        @media all and (max-width: 580px) {
+            width: 65%;
+        }
     }
     progress::-webkit-progress-bar {
         background: transparent;
@@ -624,6 +624,7 @@
     background: url("../media/img/about-us-background.png");
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
     .custom-container {
         padding-top: 140px;
         padding-bottom: 122px;
@@ -632,6 +633,13 @@
         font-size: 72px;
         color: $main-color;
         margin-bottom: 12px;
+        @media all and (max-width: 645px) {
+            font-size: 50px;
+            text-align: left;
+        }
+        @media all and (max-width: 545px) {
+            font-size: 40px;
+        }
     }
     p {
         font-size: 14px;
@@ -647,10 +655,25 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 46px;
+        @media all and (max-width: 745px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-bottom: 0;
+        }
     }
     .about-description {
-        max-width: 525px;
+        width: 525px;
         padding-top: 165px;
+        @media all and (max-width: 1050px) {
+            width: 450px;
+            padding-top: 85px;
+        }
+        @media all and (max-width: 745px) {
+            padding-top: 45px;
+        }
+        @media all and (max-width: 480px) {
+            width: 100%;
+        }
     }
     p {
         color: #666;
@@ -667,9 +690,21 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
+        @media all and (max-width: 975px) {
+            width: 450px;
+            height: 420px;
+        }
+        @media all and (max-width: 895px) {
+            width: 350px;
+        }
+        @media all and (max-width: 360px) {
+            width: 100%;
+        }
         img {
-            width: 525px;
+            width: 100%;
+            height: 100%;
             object-fit: contain;
+            object-position: bottom;
         }
     }
 }
@@ -694,7 +729,7 @@
         font-weight: 100;
         text-align: center;
         white-space: pre-wrap;
-        width: 630px;
+        max-width: 630px;
         margin-bottom: 47px;
         line-height: 35px;
     }
@@ -718,6 +753,7 @@
 .wr-training-types {
     .custom-container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         background-image: url("../media/img/training-types-bg.png");
         background-repeat: no-repeat;
@@ -728,7 +764,17 @@
 }
 
 .training-type {
-    width: 370px;
+    width: 30%;
+    @media all and (max-width: 950px) {
+        width: 45%;
+        margin-bottom: 50px;
+    }
+    @media all and (max-width: 650px) {
+        width: 90%;
+    }
+    @media all and (max-width: 450px) {
+        width: 100%;
+    }
     .img-container {
         width: 100%;
         height: 270px;
@@ -784,6 +830,9 @@
         width: 600px;
         text-align: center;
         margin-bottom: 77px;
+        @media all and (max-width: 625px) {
+            width: 100%;
+        }
         .swiper-slide {
             display: flex;
             flex-direction: column;
@@ -834,18 +883,33 @@
             font-family: "Droid Serif Regular", serif;
             font-size: 42px;
             color: $main-color;
+            @media all and (max-width: 768px) {
+                font-size: 32px;
+            }
+            @media all and (max-width: 360px) {
+                font-size: 20px;
+            }
+            @media all and (max-width: 340px) {
+                font-size: 18px;
+            }
         }
         p {
             font-size: 14px;
             color: $link-color;
             margin-top: 11px;
+            @media all and (max-width: 360px) {
+                font-size: 10px;
+            }
+            @media all and (max-width: 340px) {
+                font-size: 8px;
+            }
         }
     }
 }
 
 .wr-promo-access {
     padding-top: 116px;
-    padding-bottom: 120px;
+    padding-bottom: 35px;
     .custom-container {
         display: flex;
         flex-direction: column;
@@ -857,7 +921,7 @@
         margin-bottom: 19px;
     }
     p {
-        width: 450px;
+        max-width: 450px;
         line-height: 24px;
         font-size: 14px;
         color: #666;
