@@ -78,7 +78,6 @@ $text-color: #bbb;
             padding: 0;
         }
         input {
-            display: block;
             width: 355px;
             height: 50px;
             box-sizing: border-box;
@@ -91,6 +90,7 @@ $text-color: #bbb;
                 font-family: "Lato Regular", sans-serif;
                 font-size: 13px;
                 color: $text-color;
+                line-height: normal;
             }
             &:focus {
                 outline: none;
