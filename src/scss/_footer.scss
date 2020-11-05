@@ -86,11 +86,11 @@ $text-color: #bbb;
             border: none;
             background-color: $footer-color;
             color: #fff;
-            line-height: 49px;
             &::placeholder {
                 font-family: "Lato Regular", sans-serif;
                 font-size: 13px;
                 color: $text-color;
+                line-height: 49px;
             }
             &:focus {
                 outline: none;
