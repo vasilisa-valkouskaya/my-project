@@ -441,6 +441,7 @@ nav button {
           appearance: none;
   width: 355px;
   height: 50px;
+  box-sizing: border-box;
   padding-left: 20px;
   border-radius: 25px;
   border: none;
@@ -452,18 +453,21 @@ nav button {
   font-family: "Lato Regular", sans-serif;
   font-size: 13px;
   color: #bbb;
+  line-height: 48px;
 }
 
 .wr-contact-form form input:-ms-input-placeholder {
   font-family: "Lato Regular", sans-serif;
   font-size: 13px;
   color: #bbb;
+  line-height: 48px;
 }
 
 .wr-contact-form form input::placeholder {
   font-family: "Lato Regular", sans-serif;
   font-size: 13px;
   color: #bbb;
+  line-height: 48px;
 }
 
 .wr-contact-form form input:focus {
@@ -474,6 +478,7 @@ nav button {
 .wr-contact-form form button {
   width: 140px;
   height: 50px;
+  box-sizing: border-box;
   background-color: #7492ec;
   font-family: "Poppins SemiBold", sans-serif;
   font-size: 12px;
@@ -1683,7 +1688,7 @@ nav button {
 
   .wr-contact-form form {
     margin-left: 0;
-    padding-left: 45px;
+    padding-left: 0;
   }
 
   .wr-other-details .custom-container {

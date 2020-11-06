@@ -78,6 +78,7 @@ $text-color: #bbb;
             appearance: none;
             width: 355px;
             height: 50px;
+            box-sizing: border-box;
             padding-left: 20px;
             border-radius: 25px;
             border: none;
@@ -87,6 +88,7 @@ $text-color: #bbb;
                 font-family: "Lato Regular", sans-serif;
                 font-size: 13px;
                 color: $text-color;
+                line-height: 48px;
             }
             &:focus {
                 outline: none;
@@ -96,6 +98,7 @@ $text-color: #bbb;
         button {
             width: 140px;
             height: 50px;
+            box-sizing: border-box;
             background-color: $main-color;
             font-family: "Poppins SemiBold", sans-serif;
             font-size: 12px;
