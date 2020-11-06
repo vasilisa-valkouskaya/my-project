@@ -74,20 +74,15 @@ $text-color: #bbb;
         margin-left: 27%;
         position: relative;
         right: 0;
-        @media all and (max-width: 484px) {
-            padding: 0;
-        }
         input {
+            appearance: none;
             width: 355px;
             height: 50px;
-            box-sizing: border-box;
             padding-left: 20px;
             border-radius: 25px;
             border: none;
             background-color: $footer-color;
             color: #fff;
-            appearance: none;
-            -webkit-appearance: none;
             &::placeholder {
                 font-family: "Lato Regular", sans-serif;
                 font-size: 13px;

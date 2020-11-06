@@ -436,17 +436,16 @@ nav button {
 }
 
 .wr-contact-form form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 355px;
   height: 50px;
-  box-sizing: border-box;
   padding-left: 20px;
   border-radius: 25px;
   border: none;
   background-color: #333;
   color: #fff;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 .wr-contact-form form input::-moz-placeholder {
@@ -1714,11 +1713,6 @@ nav button {
 }
 
 @media all and (max-width: 900px) {
-  .wr-contact-form form input {
-    margin: 0;
-    padding: 0;
-  }
-
   .wr-renewal .custom-container {
     text-align: center;
   }
@@ -2033,10 +2027,6 @@ nav button {
   }
 
   .wr-contact-form .wr-contact-form-text {
-    padding: 0;
-  }
-
-  .wr-contact-form form {
     padding: 0;
   }
 }
