@@ -401,12 +401,14 @@ nav button {
   margin-left: 18%;
   border-left: solid 2px #333;
   display: flex;
-  padding: 22px 0;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0 22px 45px;
 }
 
 .wr-contact-form .wr-contact-form-text {
   height: 100%;
-  padding: 0 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -426,58 +428,55 @@ nav button {
   white-space: nowrap;
 }
 
-.wr-contact-form form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 27%;
+.wr-contact-form form .input-box {
   position: relative;
-  right: 0;
+  width: 412px;
+  height: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+}
+
+.wr-contact-form form .input-box:focus {
+  border: 1px solid #676767;
 }
 
 .wr-contact-form form input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 355px;
-  height: 50px;
-  box-sizing: border-box;
-  padding-left: 20px;
-  border-radius: 25px;
+  width: 100%;
+  height: 100%;
   border: none;
   background-color: #333;
-  color: #fff;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .wr-contact-form form input::-moz-placeholder {
   font-family: "Lato Regular", sans-serif;
   font-size: 13px;
   color: #bbb;
-  line-height: 48px;
 }
 
 .wr-contact-form form input:-ms-input-placeholder {
   font-family: "Lato Regular", sans-serif;
   font-size: 13px;
   color: #bbb;
-  line-height: 48px;
 }
 
 .wr-contact-form form input::placeholder {
   font-family: "Lato Regular", sans-serif;
   font-size: 13px;
   color: #bbb;
-  line-height: 48px;
 }
 
 .wr-contact-form form input:focus {
   outline: none;
-  border: 1px solid #676767;
 }
 
 .wr-contact-form form button {
   width: 140px;
-  height: 50px;
+  height: 100%;
   box-sizing: border-box;
   background-color: #7492ec;
   font-family: "Poppins SemiBold", sans-serif;
@@ -489,9 +488,8 @@ nav button {
   overflow: hidden;
   border-radius: 25px;
   position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  right: -55px;
+  top: 0;
+  right: 0;
   transition-delay: 0.2s;
 }
 
@@ -1606,10 +1604,6 @@ nav button {
 }
 
 @media all and (max-width: 1190px) {
-  .wr-contact-form .wr-contact-form-text {
-    padding-right: 0px;
-  }
-
   .wr-access-img {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 270px);
@@ -1680,6 +1674,8 @@ nav button {
 @media all and (max-width: 969px) {
   .wr-contact-form {
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
   }
 
   .wr-contact-form .wr-contact-form-text {
@@ -1879,7 +1875,8 @@ nav button {
   }
 
   .wr-features .custom-container {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .wr-features .counter-box .counter {
@@ -2000,12 +1997,17 @@ nav button {
 }
 
 @media all and (max-width: 569px) {
-  form input {
-    max-width: 280px;
+  .wr-contact-form form input {
+    padding-left: 10px;
   }
 
-  form button {
-    max-width: 120px;
+  .wr-contact-form form .input-box {
+    width: 280px;
+    height: 40px;
+  }
+
+  .wr-contact-form form button {
+    width: 120px;
   }
 }
 
@@ -2029,10 +2031,6 @@ nav button {
   .wr-contact-form {
     margin: 0;
     border: none;
-  }
-
-  .wr-contact-form .wr-contact-form-text {
-    padding: 0;
   }
 }
 
@@ -2079,12 +2077,12 @@ nav button {
 }
 
 @media all and (max-width: 355px) {
-  form input {
-    max-width: 230px;
+  .wr-contact-form form .input-box {
+    width: 230px;
   }
 
-  form button {
-    max-width: 100px;
+  .wr-contact-form form button {
+    width: 100px;
   }
 }
 
