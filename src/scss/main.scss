@@ -610,11 +610,10 @@
     }
 }
 
-.wr-about-intro {
+.wr-intro {
     background: url("../media/img/about-us-background.png");
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
     .custom-container {
         padding-top: 140px;
         padding-bottom: 122px;
@@ -932,6 +931,127 @@
         width: 300px;
         margin-bottom: 80px;
     }
+}
+
+.pricing-intro {
+    .custom-container {
+        padding-top: 140px;
+        padding-bottom: 73px;
+    }
+    .pricing-text {
+        max-width: 400px;
+        line-height: 24px;
+    }
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.wr-pricing-cards {
+    .container {
+        max-width: 1200px;
+        padding-top: 130px;
+        padding-bottom: 90px;
+    }
+}
+
+.card-header {
+    padding-left: 0;
+    span {
+        font-family: "Lato Regular", sans-serif;
+    }
+    .price {
+        font-weight: 700;
+        color: $main-color;
+        font-size: 35px;
+    }
+    .price-details {
+        color: #999;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+}
+
+.card-body {
+    padding-left: 0;
+    padding-right: 22px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    .card-title {
+        font-family: "Poppins Regular", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: $main-color;
+        text-transform: uppercase;
+        padding-bottom: 4px;
+    }
+    .card-text {
+        color: #999;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.card-footer {
+    padding-left: 0;
+    padding-top: 40px;
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        height: 40px;
+        background-color: $main-color;
+        border: none;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        &:hover,
+        &:focus {
+            background-color: $link-color;
+        }
+    }
+}
+
+.modal-dialog {
+    h5 {
+        color: $main-color;
+    }
+    .btn-primary {
+        background-color: $main-color;
+    }
+}
+
+.wr-pricing-renewal {
+    background-image: url("../media/img/pricing-renewal-bg.jpg");
+    background-size: cover;
+    background-position: top;
+    .container {
+        padding-top: 165px;
+        padding-bottom: 330px;
+    }
+    h3 {
+        font-size: 48px;
+        color: $main-color;
+        margin-bottom: 4px;
+    }
+    p {
+        max-width: 455px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $main-color;
+        margin-bottom: 36px;
+    }
+    button {
+        width: 213px;
+    }
+}
+
+.list-unstyled {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 @media all and (max-width: 1250px) {
