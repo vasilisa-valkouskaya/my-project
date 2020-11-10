@@ -297,7 +297,7 @@
             object-position: top;
         }
         .img-container::before {
-            background-color: rgba($color: #000000, $alpha: 0.2);
+            background-color: rgba(116, 146, 236, 0.4);
             content: "";
             position: absolute;
             top: 0;
@@ -305,10 +305,10 @@
             left: 0;
             right: 0;
             opacity: 0;
+            transition-duration: 0.5s;
         }
         &:hover .img-container::before {
             opacity: 1;
-            transition-duration: 0.3s;
         }
     }
 }
@@ -431,7 +431,7 @@
         }
         &::before {
             content: "";
-            background-color: rgba($color: #000000, $alpha: 0.3);
+            background-color: rgba(116, 146, 236, 0.73);
             background-image: url(../media/img/zoom.png);
             background-repeat: no-repeat;
             background-position: center;
@@ -442,10 +442,14 @@
             left: 0;
             right: 0;
             opacity: 0;
-            transition-duration: 0.4s;
         }
         &:hover::before {
             opacity: 1;
+            z-index: 5;
+            transition-duration: 0.5s;
+        }
+        &:hover img {
+            transform: scale(1.06);
         }
         a {
             position: absolute;
@@ -458,6 +462,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition-duration: 0.6s;
         }
     }
 }
@@ -545,7 +550,7 @@
         position: relative;
         &::before {
             content: "";
-            background-color: rgba($color: #000000, $alpha: 0.2);
+            background-color: rgba(116, 146, 236, 0.3);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -785,7 +790,7 @@
         position: relative;
     }
     .img-container::before {
-        background-color: rgba($color: #000000, $alpha: 0.2);
+        background-color: rgba(116, 146, 236, 0.4);
         content: "";
         position: absolute;
         top: 0;
@@ -793,10 +798,10 @@
         left: 0;
         right: 0;
         opacity: 0;
+        transition-duration: 0.5s;
     }
     &:hover .img-container::before {
         opacity: 1;
-        transition-duration: 0.3s;
     }
     img {
         width: 100%;
@@ -1004,7 +1009,7 @@
     .wr-contact-form {
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 0;
+        padding-left: 10px;
         .wr-contact-form-text {
             margin-bottom: 20px;
         }
