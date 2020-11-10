@@ -1062,7 +1062,19 @@ nav button {
   grid-column-end: 3;
 }
 
-.wr-access-img .img-container::before {
+.wr-access-img .img-container:hover img {
+  transform: scale(1.07);
+}
+
+.wr-access-img .img-container a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.wr-access-img .img-container a::before {
   content: "";
   background-color: rgba(116, 146, 236, 0.73);
   background-image: url(../media/img/zoom.png);
@@ -1077,22 +1089,9 @@ nav button {
   opacity: 0;
 }
 
-.wr-access-img .img-container:hover::before {
+.wr-access-img .img-container:hover a::before {
   opacity: 1;
-  z-index: 5;
-  transition-duration: 0.5s;
-}
-
-.wr-access-img .img-container:hover img {
-  transform: scale(1.06);
-}
-
-.wr-access-img .img-container a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  transition-duration: 0.6s;
 }
 
 .wr-access-img .img-container img {
@@ -1100,7 +1099,7 @@ nav button {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition-duration: 0.6s;
+  transition-duration: 0.8s;
 }
 
 .wr-teacher-introduction {
@@ -1155,11 +1154,6 @@ nav button {
   margin-bottom: 60px;
 }
 
-.wr-teacher-list .teacher-item-box:hover .img-container::before {
-  opacity: 1;
-  transition-duration: 0.5s;
-}
-
 .wr-teacher-list .info-container {
   width: 170px;
   padding-top: 16px;
@@ -1175,7 +1169,7 @@ nav button {
 }
 
 .wr-teacher-list .info-container a:hover {
-  color: #666;
+  color: #7e7e7e;
 }
 
 .wr-teacher-list .info-container p {
@@ -1195,17 +1189,6 @@ nav button {
   border-radius: 50%;
   margin-right: 20px;
   position: relative;
-}
-
-.wr-teacher-list .img-container::before {
-  content: "";
-  background-color: rgba(116, 146, 236, 0.3);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
 }
 
 .wr-teacher-list img {
