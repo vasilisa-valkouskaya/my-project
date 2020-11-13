@@ -28,7 +28,7 @@ function startCounter() {
             $({ countNum: $this.text() }).animate({
                 countNum: countTo
             }, {
-                duration: 7000,
+                duration: 4000,
                 easing: 'linear',
                 step: function() {
                     $this.text(Math.floor(this.countNum));

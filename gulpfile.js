@@ -27,16 +27,16 @@ let path = {
     clean: "./" + project_folder + "/"
 }
 
-let { src, dest } = require('gulp'),
-    gulp = require('gulp'),
+let { src, dest } = require("gulp"),
+    gulp = require("gulp"),
     browsersync = require("browser-sync").create(),
     fileinclude = require("gulp-file-include"),
-    scss = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    group_media = require('gulp-group-css-media-queries'),
-    clean_css = require('gulp-clean-css'),
-    rename = require('gulp-rename'),
-    uglify = require('gulp-uglify-es').default;
+    scss = require("gulp-sass"),
+    autoprefixer = require("gulp-autoprefixer"),
+    group_media = require("gulp-group-css-media-queries"),
+    clean_css = require("gulp-clean-css"),
+    rename = require("gulp-rename"),
+    uglify = require("gulp-uglify-es").default;
 
 function browserSync(params) {
     browsersync.init({
@@ -67,8 +67,8 @@ function css() {
         )
         .pipe(
             autoprefixer({
-                overrideBrowserlist: ["last 2 versions"],
-                cascade: true
+                overrideBrowserslist: ['last 3 versions'],
+                cascade: false
             })
         )
         .pipe(dest(path.build.css))
@@ -124,6 +124,7 @@ let watch = gulp.parallel(build, watchFiles, browserSync);
 exports.media = media;
 exports.fonts = fonts;
 exports.js = js;
+exports.css = css;
 exports.html = html;
 exports.build = build;
 exports.watch = watch;

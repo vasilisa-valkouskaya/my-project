@@ -17,6 +17,7 @@ h1 {
 }
 
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
   overflow: visible;
@@ -35,7 +36,7 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -122,6 +123,7 @@ fieldset {
 }
 
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -140,6 +142,7 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -202,6 +205,7 @@ button.promo-btn {
   background-color: #7492ec;
   border-radius: 25px;
   height: 40px;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -209,6 +213,8 @@ button.promo-btn {
 
 button.promo-btn:hover {
   background-color: #99aade;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
@@ -221,6 +227,7 @@ button:focus {
   max-width: 1200px;
   padding: 0px 15px;
   margin: 0 auto;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -232,6 +239,7 @@ h5,
 h6,
 p {
   margin: 0px;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -301,11 +309,18 @@ p {
 
 header {
   padding: 30px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   font-family: "Poppins Bold", sans-serif;
   font-size: 16px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
 }
@@ -332,6 +347,7 @@ header .wr-logo img {
   background-color: #edf1f7;
   position: fixed;
   z-index: 100;
+  -webkit-box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -345,7 +361,11 @@ nav a:active {
 }
 
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -368,13 +388,22 @@ nav button {
   z-index: 35;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .wr-subscribe {
   background-color: #181818;
   border-bottom: solid 2px #333;
 }
 
 .wr-subscribe .custom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .wr-subscribe .wr-logo {
@@ -382,7 +411,7 @@ nav button {
   position: relative;
   width: 60px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .wr-subscribe .wr-logo img {
@@ -398,19 +427,32 @@ nav button {
 }
 
 .wr-contact-form {
-  margin-left: 18%;
+  max-width: 857px;
+  width: 100%;
   border-left: solid 2px #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 22px 0 22px 45px;
 }
 
 .wr-contact-form .wr-contact-form-text {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -432,6 +474,7 @@ nav button {
   position: relative;
   width: 412px;
   height: 50px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 25px;
@@ -444,7 +487,14 @@ nav button {
   border: none;
   background-color: #333;
   padding-left: 20px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.wr-contact-form input::-webkit-input-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #bbb;
 }
 
 .wr-contact-form input::-moz-placeholder {
@@ -454,6 +504,12 @@ nav button {
 }
 
 .wr-contact-form input:-ms-input-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.wr-contact-form input::-ms-input-placeholder {
   font-family: "Lato Regular", sans-serif;
   font-size: 13px;
   color: #bbb;
@@ -473,12 +529,14 @@ nav button {
 .wr-contact-form button {
   width: 140px;
   height: 100%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #7492ec;
   font-family: "Poppins SemiBold", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   color: #fff;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -486,6 +544,8 @@ nav button {
   position: absolute;
   top: 0;
   right: 0;
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
 
@@ -500,7 +560,11 @@ nav button {
 .wr-other-details .custom-container {
   padding-top: 56px;
   padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -512,7 +576,6 @@ nav button {
 
 .wr-other-details p {
   font-size: 13px;
-  margin-bottom: 16px;
   color: #bbb;
 }
 
@@ -527,35 +590,57 @@ nav button {
 }
 
 .wr-other-details .wr-contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 220px;
+  padding-bottom: 15px;
 }
 
 .wr-other-details .wr-contact-us p {
   line-height: 24px;
+  margin-bottom: 16px;
 }
 
-.wr-other-details .wr-contact-us a {
+.wr-other-details .wr-contact-us .clickable-contact {
   margin-bottom: 24px;
 }
 
 .wr-other-details .socials-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  width: 185px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .wr-other-details .socials-box a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  margin-right: 7px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  -webkit-transition-duration: .3s;
+  -o-transition-duration: .3s;
   transition-duration: .3s;
 }
 
 .wr-other-details .socials-box a:hover {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
   transform: scale(1.15);
 }
 
@@ -597,7 +682,12 @@ nav button {
 }
 
 .wr-other-details .wr-useful-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -611,7 +701,10 @@ nav button {
 }
 
 .wr-other-details .wr-working-day {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  margin-bottom: 16px;
 }
 
 .wr-other-details .wr-working-day svg {
@@ -666,20 +759,23 @@ nav button {
   background: url("../media/img/bg-object.png") no-repeat;
   background-position: right -5px;
   background-size: contain;
-  padding-top: 30px;
-  padding-bottom: 48px;
-  position: relative;
-  top: -73px;
 }
 
 .wr-about-yoga .custom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 120px;
 }
 
 .wr-description {
   max-width: 570px;
-  padding-top: 142px;
+  padding-top: 69px;
 }
 
 .wr-description h1 {
@@ -703,12 +799,15 @@ nav button {
   border: solid 1px transparent;
   border-radius: 12px;
   overflow: hidden;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
 }
 
 .video-container:hover .controls {
   bottom: 0;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
@@ -719,7 +818,7 @@ nav button {
 
 .video-container video[poster] {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .video-container .play-btn-main {
@@ -729,6 +828,8 @@ nav button {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -742,8 +843,12 @@ nav button {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
@@ -763,6 +868,8 @@ nav button {
   width: 100%;
   height: 30px;
   background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
@@ -773,6 +880,8 @@ nav button {
   background-size: contain;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -804,8 +913,8 @@ nav button {
 .video-container progress {
   cursor: pointer;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: 1px solid #999;
   border-radius: 4px;
   width: 450px;
@@ -814,6 +923,8 @@ nav button {
   color: #7492ec;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 54px;
 }
@@ -834,12 +945,25 @@ nav button {
   min-width: 70px;
   min-height: 70px;
   border: 2px solid #7492ec;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 50%;
   margin-right: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+}
+
+.wr-benefits {
+  position: absolute;
+  top: -73px;
+  right: 15px;
 }
 
 .benefit-description-box {
@@ -859,8 +983,12 @@ nav button {
 }
 
 .benefit-item-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 52px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -916,9 +1044,9 @@ nav button {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
 }
 
 .wr-practices .swiper-slide .img-container::before {
@@ -930,6 +1058,8 @@ nav button {
   left: 0;
   right: 0;
   opacity: 0;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
@@ -949,6 +1079,7 @@ nav button {
   line-height: 23px;
   height: 46px;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   margin-bottom: 13px;
 }
@@ -960,7 +1091,11 @@ nav button {
 }
 
 .detailes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 14px;
 }
@@ -1015,15 +1150,19 @@ nav button {
   outline: none;
 }
 
-.wr-access {
+.wr-access .custom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 116px;
   padding-bottom: 120px;
-}
-
-.wr-access .custom-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .wr-access h3 {
@@ -1063,6 +1202,8 @@ nav button {
 }
 
 .wr-access-img .img-container:hover img {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
   transform: scale(1.07);
 }
 
@@ -1091,6 +1232,8 @@ nav button {
 
 .wr-access-img .img-container:hover a::before {
   opacity: 1;
+  -webkit-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
   transition-duration: 0.6s;
 }
 
@@ -1098,7 +1241,9 @@ nav button {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+  -webkit-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
 
@@ -1112,8 +1257,15 @@ nav button {
 .wr-teacher-introduction .custom-container {
   padding-top: 138px;
   padding-bottom: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1142,14 +1294,21 @@ nav button {
 }
 
 .wr-teacher-list .custom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 120px;
   padding-bottom: 60px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .wr-teacher-list .teacher-item-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 60px;
 }
@@ -1165,6 +1324,8 @@ nav button {
   font-size: 16px;
   margin-bottom: 6px;
   color: #000000;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
 
@@ -1178,6 +1339,7 @@ nav button {
 
 .wr-teacher-list .info-container a,
 .wr-teacher-list .info-container p {
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -1195,9 +1357,9 @@ nav button {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
 }
 
 .wr-renewal {
@@ -1239,10 +1401,10 @@ nav button {
 .wr-renewal .wr-picture img {
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
-.wr-companies-list {
+.wr-companies-list .custom-container {
   padding-top: 78px;
   padding-bottom: 78px;
 }
@@ -1250,8 +1412,14 @@ nav button {
 .wr-companies-list .swiper-slide {
   width: 105px;
   height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
 }
@@ -1287,20 +1455,20 @@ nav button {
   padding-left: 5px;
 }
 
-.wr-about-information {
-  position: relative;
-  top: -40px;
-}
-
 .wr-about-information .custom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-bottom: 46px;
+  padding-bottom: 175px;
+  position: relative;
 }
 
 .wr-about-information .about-description {
   width: 525px;
-  padding-top: 165px;
+  padding-top: 125px;
 }
 
 .wr-about-information p {
@@ -1314,8 +1482,11 @@ nav button {
 }
 
 .wr-about-information .img-container {
+  position: absolute;
+  right: 32px;
+  top: -42px;
   width: 555px;
-  height: 520px;
+  height: 489px;
   background-image: url("../media/img/about-description-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1326,9 +1497,9 @@ nav button {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
 }
 
 .wr-quote {
@@ -1337,13 +1508,21 @@ nav button {
   background-image: url("../media/img/quote-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .wr-quote .custom-container {
   padding-top: 165px;
   padding-bottom: 102px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #fff;
 }
@@ -1376,14 +1555,19 @@ nav button {
 }
 
 .wr-training-types .custom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   background-image: url("../media/img/training-types-bg.png");
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 120px;
-  padding-bottom: 113px;
+  padding-bottom: 90px;
 }
 
 .training-type {
@@ -1406,6 +1590,8 @@ nav button {
   left: 0;
   right: 0;
   opacity: 0;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
@@ -1417,7 +1603,7 @@ nav button {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .training-type h5 {
@@ -1445,8 +1631,15 @@ nav button {
 .wr-features .custom-container {
   padding-top: 125px;
   padding-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1457,8 +1650,15 @@ nav button {
 }
 
 .wr-features .swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   margin-bottom: 31px;
@@ -1500,14 +1700,18 @@ nav button {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
 }
 
 .wr-features .counter-box {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: center;
 }
@@ -1524,15 +1728,19 @@ nav button {
   margin-top: 11px;
 }
 
-.wr-promo-access {
-  padding-top: 116px;
-  padding-bottom: 35px;
-}
-
 .wr-promo-access .custom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  padding-top: 116px;
+  padding-bottom: 113px;
 }
 
 .wr-promo-access h3 {
@@ -1552,7 +1760,6 @@ nav button {
 
 .wr-promo-access button {
   width: 300px;
-  margin-bottom: 80px;
 }
 
 .pricing-intro .custom-container {
@@ -1623,8 +1830,14 @@ nav button {
 }
 
 .card-footer .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 140px;
   height: 40px;
@@ -1650,9 +1863,9 @@ nav button {
 }
 
 .wr-pricing-renewal {
-  background-image: url("../media/img/pricing-renewal-bg.jpg");
+  background: url("../media/img/pricing-renewal-bg.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
 }
 
 .wr-pricing-renewal .container {
@@ -1678,9 +1891,88 @@ nav button {
   width: 213px;
 }
 
-.list-unstyled {
+.custom-list {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.wr-training-intro {
+  background: url("../media/img/about-us-background.png");
+  background-position: bottom;
+}
+
+.wr-training-intro__custom-container {
+  padding-top: 215px;
+  padding-bottom: 105px;
+}
+
+.headline__heading {
+  font-size: 29px;
+  color: #7492ec;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.headline__text {
+  max-width: 395px;
+  font-size: 14px;
+  color: #7492ec;
+  line-height: 24px;
+}
+
+.wr-trainig-info__custom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.training-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 150px;
+}
+
+.training-info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+
+.training-info-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.training-info-list-item__svg {
+  height: 13px;
+  fill: #7492ec;
+  margin-right: 10px;
+}
+
+.training-info-list-item__text {
+  font-size: 13px;
+  color: #999;
+}
+
+.training-info__text {
+  max-width: 500px;
+  font-size: 14px;
+  color: #666;
+  line-height: 24px;
 }
 
 @media all and (max-width: 1700px) {
@@ -1728,23 +2020,25 @@ nav button {
 }
 
 @media all and (max-width: 1120px) {
-  .wr-contact-form {
-    margin-left: 10%;
-  }
-
   .wr-renewal .wr-picture {
     right: 10px;
   }
 }
 
 @media all and (max-width: 1075px) {
-  .wr-about-yoga {
-    top: 0;
+  .wr-about-yoga .custom-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 30px;
   }
 
-  .wr-about-yoga .custom-container {
-    flex-direction: column;
-    align-items: center;
+  .wr-about-yoga .wr-benefits {
+    position: static;
   }
 
   .wr-description {
@@ -1755,6 +2049,15 @@ nav button {
   .benefit-item-box {
     margin-bottom: 20px;
   }
+
+  .wr-practices .custom-container {
+    padding-bottom: 30px;
+  }
+
+  .wr-access .custom-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media all and (max-width: 1050px) {
@@ -1764,15 +2067,45 @@ nav button {
   }
 }
 
-@media all and (max-width: 1025px) {
-  .wr-contact-form {
-    margin-left: 5%;
+@media all and (max-width: 1024px) and (orientation: portrait) {
+  .wr-introduction {
+    height: 680px;
   }
 }
 
-@media all and (max-width: 1024px), all and (orientation: portrait) {
-  .wr-introduction {
-    height: 600px;
+@media all and (max-width: 1024px) {
+  .wr-about-information .img-container {
+    right: 0;
+  }
+}
+
+@media all and (max-width: 1005px) {
+  .wr-subscribe .wr-logo {
+    padding-right: 15px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .pricing-intro {
+    background-size: cover;
+  }
+
+  .pricing-intro .custom-container {
+    padding-bottom: 90px;
+  }
+
+  .wr-pricing-cards .container {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .card-footer {
+    padding-top: 20px;
   }
 }
 
@@ -1785,7 +2118,12 @@ nav button {
 
 @media all and (max-width: 969px) {
   .wr-contact-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding-left: 10px;
   }
@@ -1800,6 +2138,7 @@ nav button {
   }
 
   .wr-other-details .custom-container {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
@@ -1812,9 +2151,15 @@ nav button {
 }
 
 @media all and (max-width: 950px) {
+  .wr-training-types .custom-container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .training-type {
-    width: 45%;
-    margin-bottom: 50px;
+    width: 55%;
+    margin-bottom: 40px;
   }
 }
 
@@ -1825,19 +2170,36 @@ nav button {
   }
 }
 
-@media all and (max-width: 900px) {
-  .wr-renewal .custom-container {
-    text-align: center;
+@media all and (max-width: 900px) and (orientation: landscape) {
+  header {
+    padding: 5px 30px;
   }
 
+  .wr-slogan h2 {
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 900px) {
   .wr-renewal .wr-picture {
     display: none;
   }
 
   .wr-renewal .wr-renewal-description {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
   }
 
   .wr-renewal .wr-renewal-description h3 {
@@ -1846,6 +2208,11 @@ nav button {
 
   .wr-renewal .wr-renewal-description p {
     font-size: 16px;
+  }
+
+  .wr-companies-list .custom-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -1860,12 +2227,35 @@ nav button {
 }
 
 @media all and (max-width: 854px) {
-  header {
-    padding: 30px 30px;
-  }
-
   .sticky {
     padding: 0 30px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .wr-intro {
+    background-size: cover;
+  }
+
+  .wr-about-information .custom-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .wr-about-information .about-description {
+    padding-top: 35px;
+  }
+
+  .wr-about-information .img-container {
+    position: static;
+    height: 100%;
   }
 }
 
@@ -1894,6 +2284,7 @@ nav button {
     left: 0;
     width: 100%;
     height: 100%;
+    -webkit-box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
   }
 
@@ -1913,6 +2304,8 @@ nav button {
     border-radius: 10px;
     position: absolute;
     top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
   }
 
@@ -1926,6 +2319,8 @@ nav button {
     position: absolute;
     left: 0;
     border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
 
@@ -1935,11 +2330,15 @@ nav button {
 
   .burger-menu.active span::before {
     top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
   .burger-menu.active span::after {
     bottom: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 
@@ -1959,19 +2358,28 @@ nav button {
     height: 100%;
     background-color: #f4f6fa;
     z-index: 25;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
     overflow: hidden;
   }
 
   .mobile-menu ul {
-    padding-top: 75px;
+    padding-top: 90px;
+    padding-left: 70px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     font-size: 20px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
 
   .mobile-menu li {
     margin-bottom: 20px;
+    margin-left: 0;
   }
 
   .mobile-menu.show {
@@ -1983,7 +2391,7 @@ nav button {
   }
 
   .wr-training-types .custom-container {
-    padding-bottom: 0px;
+    padding-bottom: 20px;
   }
 
   .wr-features .custom-container {
@@ -1995,28 +2403,35 @@ nav button {
     font-size: 32px;
   }
 
-  .wr-promo-access {
+  .wr-promo-access .custom-container {
     padding-top: 60px;
   }
-}
 
-@media all and (max-width: 745px) {
-  .wr-about-information .custom-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    padding-bottom: 0;
+  .wr-teacher-introduction .custom-container {
+    padding-top: 80px;
+    padding-bottom: 60px;
   }
 
-  .wr-about-information .about-description {
-    padding-top: 45px;
+  .wr-teacher-list .custom-container {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .wr-teacher-list .teacher-item-box {
+    margin-bottom: 30px;
   }
 }
 
-@media all and (max-width: 667px) and (orientation: landscape) {
+@media all and (max-width: 736px) and (orientation: landscape) {
   .mobile-menu ul {
-    padding-top: 60px;
+    padding-top: 65px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     font-size: 16px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
 
@@ -2036,6 +2451,16 @@ nav button {
 
   .training-type {
     width: 90%;
+  }
+
+  .wr-pricing-cards .container {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .wr-pricing-renewal .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -2058,7 +2483,7 @@ nav button {
   }
 }
 
-@media all and (max-width: 600px), all and (orientation: portrait) {
+@media all and (max-width: 600px) and (orientation: portrait) {
   .wr-introduction {
     height: 450px;
   }
@@ -2113,13 +2538,44 @@ nav button {
     padding-left: 10px;
   }
 
+  .wr-contact-form form {
+    width: 100%;
+  }
+
   .wr-contact-form form .input-box {
-    width: 280px;
+    width: 100%;
     height: 40px;
   }
 
   .wr-contact-form form button {
     width: 120px;
+  }
+
+  .wr-teacher-introduction .custom-container {
+    padding-bottom: 30px;
+  }
+
+  .wr-teacher-list .custom-container {
+    padding-top: 30px;
+  }
+
+  .wr-teacher-list .teacher-item-box {
+    margin-bottom: 20px;
+  }
+
+  .wr-renewal .wr-renewal-description {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .wr-renewal .wr-renewal-description h3 {
+    font-size: 42px;
+  }
+
+  .wr-renewal .wr-renewal-description p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
   }
 }
 
@@ -2141,7 +2597,6 @@ nav button {
   }
 
   .wr-contact-form {
-    margin: 0;
     border: none;
   }
 }
@@ -2153,8 +2608,37 @@ nav button {
 }
 
 @media all and (max-width: 450px) {
+  .wr-quote .custom-container {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+
+  .wr-training-types .custom-container {
+    padding-top: 65px;
+    padding-bottom: 10px;
+  }
+
   .training-type {
     width: 100%;
+  }
+
+  .wr-features .swiper-container {
+    margin-bottom: 35px;
+  }
+
+  .wr-promo-access .custom-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .wr-pricing-renewal .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .wr-pricing-renewal h3 {
+    font-size: 38px;
   }
 }
 
@@ -2189,10 +2673,6 @@ nav button {
 }
 
 @media all and (max-width: 355px) {
-  .wr-contact-form form .input-box {
-    width: 230px;
-  }
-
   .wr-contact-form form button {
     width: 100px;
   }
@@ -2205,5 +2685,12 @@ nav button {
 
   .wr-features .counter-box p {
     font-size: 8px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .wr-intro .custom-container {
+    padding-top: 120px;
+    padding-bottom: 90px;
   }
 }

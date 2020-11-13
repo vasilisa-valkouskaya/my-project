@@ -8,11 +8,10 @@
     background: url("../media/img/top-background.png") no-repeat;
     background-size: cover;
     background-position: bottom;
-    @media all and (max-width: 1024px), all and (orientation: portrait) {
-        height: 600px;
+    @media all and (max-width: 1024px) and (orientation: portrait) {
+        height: 680px;
     }
-    @media all and (max-width: 600px),
-    all and (orientation: portrait) {
+    @media all and (max-width: 600px) and (orientation: portrait) {
         height: 450px;
     }
     @media all and (max-width: 375px) {
@@ -31,8 +30,7 @@
     @media all and (max-width: 768px) {
         padding-top: 30vh;
     }
-    @media all and (max-width: 600px),
-    all and (orientation: portrait) {
+    @media all and (max-width: 600px) and (orientation: portrait) {
         padding-top: 20vh;
     }
     h2 {
@@ -45,6 +43,9 @@
         margin-bottom: 17px;
         @media all and (max-width: 1200px) {
             font-size: 48px;
+        }
+        @media all and (max-width: 900px) and (orientation: landscape) {
+            font-size: 40px;
         }
         @media all and (max-width: 650px) {
             font-size: 36px;
@@ -71,19 +72,18 @@
     background: url("../media/img/bg-object.png") no-repeat;
     background-position: right -5px;
     background-size: contain;
-    padding-top: 30px;
-    padding-bottom: 48px;
-    position: relative;
-    top: -73px;
     .custom-container {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 120px;
     }
 }
 
 .wr-description {
     max-width: 570px;
-    padding-top: 142px;
+    padding-top: 69px;
     h1 {
         font-family: "Poppins Light", sans-serif;
         font-size: 48px;
@@ -230,6 +230,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.wr-benefits {
+    position: absolute;
+    top: -73px;
+    right: 15px;
 }
 
 .benefit-description-box {
@@ -392,12 +398,12 @@
 }
 
 .wr-access {
-    padding-top: 116px;
-    padding-bottom: 120px;
     .custom-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 116px;
+        padding-bottom: 120px;
     }
     h3 {
         font-size: 32px;
@@ -477,6 +483,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media all and (max-width: 569px) {
+            padding-bottom: 30px;
+        }
     }
     h3 {
         font-size: 32px;
@@ -508,10 +517,16 @@
         padding-bottom: 60px;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media all and (max-width: 569px) {
+            padding-top: 30px;
+        }
     }
     .teacher-item-box {
         display: flex;
         margin-bottom: 60px;
+        @media all and (max-width: 569px) {
+            margin-bottom: 20px;
+        }
     }
     .info-container {
         width: 170px;
@@ -559,10 +574,17 @@
         margin-left: 16%;
         padding-top: 241px;
         padding-bottom: 194px;
+        @media all and (max-width: 569px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
         h3 {
             font-size: 48px;
             color: $main-color;
             margin-bottom: 4px;
+            @media all and (max-width: 569px) {
+                font-size: 42px;
+            }
         }
         p {
             max-width: 455px;
@@ -570,6 +592,11 @@
             line-height: 36px;
             color: $main-color;
             margin-bottom: 40px;
+            @media all and (max-width: 569px) {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
         }
         button {
             width: 213px;
@@ -591,8 +618,10 @@
 }
 
 .wr-companies-list {
-    padding-top: 78px;
-    padding-bottom: 78px;
+    .custom-container {
+        padding-top: 78px;
+        padding-bottom: 78px;
+    }
     .swiper-slide {
         width: 105px;
         height: 80px;
@@ -614,9 +643,16 @@
     background: url("../media/img/about-us-background.png");
     background-repeat: no-repeat;
     background-position: bottom;
+    @media all and (max-width: 850px) {
+        background-size: cover;
+    }
     .custom-container {
         padding-top: 140px;
         padding-bottom: 122px;
+        @media all and (max-width: 320px) {
+            padding-top: 120px;
+            padding-bottom: 90px;
+        }
     }
     h3 {
         font-size: 72px;
@@ -638,27 +674,27 @@
 }
 
 .wr-about-information {
-    position: relative;
-    top: -40px;
     .custom-container {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 46px;
-        @media all and (max-width: 745px) {
+        padding-bottom: 175px;
+        position: relative;
+        @media all and (max-width: 850px) {
             flex-direction: column-reverse;
             align-items: center;
-            padding-bottom: 0;
+            padding-top: 10px;
+            padding-bottom: 30px;
         }
     }
     .about-description {
         width: 525px;
-        padding-top: 165px;
+        padding-top: 125px;
         @media all and (max-width: 1050px) {
             width: 450px;
             padding-top: 85px;
         }
-        @media all and (max-width: 745px) {
-            padding-top: 45px;
+        @media all and (max-width: 850px) {
+            padding-top: 35px;
         }
         @media all and (max-width: 480px) {
             width: 100%;
@@ -673,12 +709,22 @@
         }
     }
     .img-container {
+        position: absolute;
+        right: 32px;
+        top: -42px;
         width: 555px;
-        height: 520px;
+        height: 489px;
         background-image: url("../media/img/about-description-bg.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
+        @media all and (max-width: 1024px) {
+            right: 0;
+        }
+        @media all and (max-width: 850px) {
+            position: static;
+            height: 100%;
+        }
         @media all and (max-width: 975px) {
             width: 450px;
             height: 420px;
@@ -704,6 +750,7 @@
     background-image: url("../media/img/quote-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     .custom-container {
         padding-top: 165px;
         padding-bottom: 102px;
@@ -711,6 +758,10 @@
         flex-direction: column;
         align-items: center;
         color: #fff;
+        @media all and (max-width: 450px) {
+            padding-top: 80px;
+            padding-bottom: 70px;
+        }
     }
     h4 {
         font-family: "Droid Serif Italic", serif;
@@ -748,9 +799,16 @@
         background-repeat: no-repeat;
         background-position: top center;
         padding-top: 120px;
-        padding-bottom: 113px;
+        padding-bottom: 90px;
+        @media all and (max-width: 950px) {
+            justify-content: center;
+        }
         @media all and (max-width: 768px) {
-            padding-bottom: 0px;
+            padding-bottom: 20px;
+        }
+        @media all and (max-width: 450px) {
+            padding-top: 65px;
+            padding-bottom: 10px;
         }
     }
 }
@@ -758,8 +816,8 @@
 .training-type {
     width: 30%;
     @media all and (max-width: 950px) {
-        width: 45%;
-        margin-bottom: 50px;
+        width: 55%;
+        margin-bottom: 40px;
     }
     @media all and (max-width: 650px) {
         width: 90%;
@@ -828,6 +886,9 @@
         margin-bottom: 77px;
         @media all and (max-width: 625px) {
             width: 100%;
+        }
+        @media all and (max-width: 450px) {
+            margin-bottom: 35px;
         }
         .swiper-slide {
             display: flex;
@@ -904,15 +965,19 @@
 }
 
 .wr-promo-access {
-    padding-top: 116px;
-    padding-bottom: 35px;
-    @media all and (max-width: 768px) {
-        padding-top: 60px;
-    }
     .custom-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 116px;
+        padding-bottom: 113px;
+        @media all and (max-width: 768px) {
+            padding-top: 60px;
+        }
+        @media all and (max-width: 450px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
     }
     h3 {
         font-size: 32px;
@@ -929,14 +994,19 @@
     }
     button {
         width: 300px;
-        margin-bottom: 80px;
     }
 }
 
 .pricing-intro {
+    @media all and (max-width: 991px) {
+        background-size: cover;
+    }
     .custom-container {
         padding-top: 140px;
         padding-bottom: 73px;
+        @media all and (max-width: 991px) {
+            padding-bottom: 90px;
+        }
     }
     .pricing-text {
         max-width: 400px;
@@ -953,6 +1023,14 @@
         max-width: 1200px;
         padding-top: 130px;
         padding-bottom: 90px;
+        @media all and (max-width: 991px) {
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+        @media all and (max-width: 650px) {
+            padding-top: 25px;
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -978,6 +1056,10 @@
     padding-right: 22px;
     padding-top: 40px;
     padding-bottom: 30px;
+    @media all and (max-width: 991px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .card-title {
         font-family: "Poppins Regular", sans-serif;
         font-size: 14px;
@@ -996,6 +1078,9 @@
 .card-footer {
     padding-left: 0;
     padding-top: 40px;
+    @media all and (max-width: 991px) {
+        padding-top: 20px;
+    }
     .btn {
         display: flex;
         align-items: center;
@@ -1025,17 +1110,29 @@
 }
 
 .wr-pricing-renewal {
-    background-image: url("../media/img/pricing-renewal-bg.jpg");
+    background: url("../media/img/pricing-renewal-bg.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     .container {
         padding-top: 165px;
         padding-bottom: 330px;
+        @media all and (max-width: 650px) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        @media all and (max-width: 450px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
     }
     h3 {
         font-size: 48px;
         color: $main-color;
         margin-bottom: 4px;
+        @media all and (max-width: 450px) {
+            font-size: 38px;
+        }
     }
     p {
         max-width: 455px;
@@ -1049,9 +1146,72 @@
     }
 }
 
-.list-unstyled {
+.custom-list {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.wr-training-intro {
+    background: url("../media/img/about-us-background.png");
+    background-position: bottom;
+    &__custom-container {
+        padding-top: 215px;
+        padding-bottom: 105px;
+    }
+}
+
+.headline__heading {
+    font-size: 29px;
+    color: $main-color;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.headline__text {
+    max-width: 395px;
+    font-size: 14px;
+    color: $main-color;
+    line-height: 24px;
+}
+
+.wr-trainig-info__custom-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.training-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+.training-info__list {
+    display: flex;
+    padding-left: 0;
+}
+
+.training-info-list-item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.training-info-list-item__svg {
+    height: 13px;
+    fill: $main-color;
+    margin-right: 10px;
+}
+
+.training-info-list-item__text {
+    font-size: 13px;
+    color: #999;
+}
+
+.training-info__text {
+    max-width: 500px;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
 }
 
 @media all and (max-width: 1250px) {
@@ -1095,10 +1255,13 @@
 
 @media all and (max-width: 1075px) {
     .wr-about-yoga {
-        top: 0;
         .custom-container {
             flex-direction: column;
             align-items: center;
+            padding-bottom: 30px;
+        }
+        .wr-benefits {
+            position: static;
         }
     }
     .wr-description {
@@ -1107,6 +1270,17 @@
     }
     .benefit-item-box {
         margin-bottom: 20px;
+    }
+    .wr-practices {
+        .custom-container {
+            padding-bottom: 30px;
+        }
+    }
+    .wr-access {
+        .custom-container {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
     }
 }
 
@@ -1136,22 +1310,47 @@
 
 @media all and (max-width: 900px) {
     .wr-renewal {
-        .custom-container {
-            text-align: center;
-        }
         .wr-picture {
             display: none;
         }
         .wr-renewal-description {
-            padding-top: 80px;
-            padding-bottom: 80px;
+            padding-top: 70px;
+            padding-bottom: 70px;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             h3 {
                 font-size: 36px;
             }
             p {
                 font-size: 16px;
             }
+        }
+    }
+    .wr-companies-list {
+        .custom-container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .wr-teacher-introduction {
+        .custom-container {
+            padding-top: 80px;
+            padding-bottom: 60px;
+        }
+    }
+    .wr-teacher-list {
+        .custom-container {
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+        .teacher-item-box {
+            margin-bottom: 30px;
         }
     }
 }
