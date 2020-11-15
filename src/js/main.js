@@ -2,7 +2,7 @@
 
 
 window.addEventListener('scroll', function() {
-    if (window.innerWidth >= 769) {
+    if (window.innerWidth >= 854) {
         let header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 320);
     }

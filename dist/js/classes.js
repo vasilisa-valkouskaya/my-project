@@ -89,8 +89,8 @@ const slider = new Swiper('.wr-related__swiper-container', {
     loop: true,
 
     navigation: {
-        nextEl: '.swiper-button-right',
-        prevEl: '.swiper-button-left',
+        nextEl: '.wr-slider__btn-right',
+        prevEl: '.wr-slider__btn-left',
     },
     breakpoints: {
         520: {

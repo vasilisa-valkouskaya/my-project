@@ -27,7 +27,7 @@
     @media all and (max-width: 1200px) {
         margin-right: 5%;
     }
-    @media all and (max-width: 768px) {
+    @media all and (max-width: 854px) {
         padding-top: 30vh;
     }
     @media all and (max-width: 600px) and (orientation: portrait) {
@@ -678,7 +678,7 @@
     }
     p {
         font-size: 14px;
-        color: $link-color;
+        color: #99aff1;
         padding-left: 5px;
     }
 }
@@ -1167,6 +1167,29 @@
     &__custom-container {
         padding-top: 182px;
         padding-bottom: 100px;
+        @media all and (max-width: 900px) {
+            padding-top: 70px;
+            padding-bottom: 40px;
+        }
+        @media all and (max-width: 853px) {
+            padding-top: 20%;
+        }
+        @media all and (max-width: 570px) {
+            padding-top: 25%;
+        }
+        @media all and (max-width: 485px) {
+            padding-top: 30%;
+        }
+    }
+    @media all and (max-width: 900px) {
+        height: 400px;
+        background-size: cover;
+    }
+    @media all and (max-width: 700px) {
+        height: 320px;
+    }
+    @media all and (max-width: 540px) {
+        height: 280px;
     }
 }
 
@@ -1175,13 +1198,23 @@
     color: $main-color;
     font-weight: 600;
     margin-bottom: 10px;
+    @media all and (max-width: 570px) {
+        font-size: 24px;
+        text-align: left;
+    }
+    @media all and (max-width: 485px) {
+        font-size: 20px;
+    }
 }
 
 .headline__text {
     max-width: 410px;
     font-size: 14px;
-    color: $main-color;
+    color: #99aff1;
     line-height: 24px;
+    @media all and (max-width: 485px) {
+        font-size: 12px;
+    }
 }
 
 .wr-trainig-info__custom-container {
@@ -1189,35 +1222,67 @@
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 120px;
+    @media all and (max-width: 900px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    @media all and (max-width: 500px) {
+        padding-top: 40px;
+    }
 }
 
 .training-info {
     display: flex;
     flex-direction: column;
     padding-top: 113px;
+    @media all and (max-width: 1024px) {
+        margin-right: 15px;
+    }
+    @media all and (max-width: 900px) {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .training-info__list {
     display: flex;
     padding-left: 0;
+    max-width: 470px;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .training-info__item {
     display: flex;
-    align-items: center;
-    margin-right: 29px;
+    justify-content: center;
 }
 
 .training-info-item__svg {
     height: 12px;
     fill: $main-color;
     margin-right: 14px;
+    @media all and (max-width: 425px) {
+        height: 11px;
+        margin-right: 7px;
+    }
+    @media all and (max-width: 340px) {
+        height: 10px;
+        margin-right: 5px;
+    }
 }
 
 .training-info-item__text {
+    font-family: "Lato Regular", sans-serif;
     font-size: 13px;
     color: #999;
+    @media all and (max-width: 425px) {
+        font-size: 11px;
+    }
+    @media all and (max-width: 340px) {
+        font-size: 10px;
+    }
 }
 
 .training-info__text {
@@ -1225,6 +1290,12 @@
     font-size: 14px;
     color: #666;
     line-height: 24px;
+}
+
+.wr-training-info__video-container {
+    @media all and (max-width: 900px) {
+        margin-bottom: 20px;
+    }
 }
 
 .wr-trainig-benefits {
@@ -1235,6 +1306,10 @@
         background-position: top center;
         padding-top: 120px;
         padding-bottom: 120px;
+        @media all and (max-width: 570px) {
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
     }
 }
 
@@ -1244,6 +1319,10 @@
     color: $main-color;
     font-size: 48px;
     margin-bottom: 60px;
+    @media all and (max-width: 570px) {
+        margin-bottom: 25px;
+        font-size: 40px;
+    }
 }
 
 .benefit-box {
@@ -1251,6 +1330,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 180px);
     gap: 30px;
+    @media all and (max-width: 1020px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 180px);
+    }
+    @media all and (max-width: 570px) {
+        gap: 20px;
+    }
 }
 
 .benefit {
@@ -1274,12 +1360,18 @@
         line-height: 24px;
     }
     &:hover {
-        transform: scale(1.05);
         background-color: $main-color;
         .benefit__title,
         .benefit__text {
             color: #fff;
         }
+    }
+    @media all and (max-width: 1020px) {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    @media all and (max-width: 768px) {
+        max-width: 100%;
     }
 }
 
@@ -1288,6 +1380,52 @@
     background-repeat: no-repeat;
     background-position: top center;
     padding-top: 120px;
+    padding-bottom: 120px;
+    @media all and (max-width: 570px) {
+        padding-bottom: 10px;
+    }
+}
+
+.wr-slider {
+    position: relative;
+}
+
+.btn-icon {
+    width: 9px;
+    height: 14px;
+    fill: $main-color;
+}
+
+.wr-slider__btn-right {
+    position: absolute;
+    top: 20%;
+    right: -3%;
+    cursor: pointer;
+}
+
+.wr-slider__btn-left {
+    position: absolute;
+    top: 20%;
+    left: -3%;
+    cursor: pointer;
+}
+
+.wr-slider__btn-right:active,
+.wr-slider__btn-right:focus,
+.wr-slider__btn-left:active,
+.wr-slider__btn-left:focus {
+    outline: none;
+}
+
+@media all and (max-width: 1250px) {
+    .wr-slider__btn-right {
+        right: 3px;
+        z-index: 10;
+    }
+    .wr-slider__btn-left {
+        left: 3px;
+        z-index: 10;
+    }
 }
 
 a:hover {
@@ -1295,6 +1433,7 @@ a:hover {
 }
 
 .swiper-slide-detailes__text {
+    font-family: "Lato Regular", sans-serif;
     font-size: 13px;
     color: #999;
 }
@@ -1370,6 +1509,159 @@ a:hover {
     height: 12px;
     fill: $main-color;
     margin-right: 12px;
+}
+
+.wr-contact-intro {
+    background-image: url("../media/img/about-us-background.png");
+    background-position: bottom;
+    .custom-container {
+        padding-top: 100px;
+        padding-bottom: 75px;
+    }
+    h3 {
+        font-family: "Poppins Light", sans-serif;
+        font-size: 72px;
+        color: $main-color;
+    }
+    p {
+        max-width: 395px;
+        color: #99aff1;
+        line-height: 24px;
+    }
+}
+
+.wr-contact-info .custom-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us-form {
+    max-width: 575px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            font-family: "Lato Regular", sans-serif;
+            font-size: 13px;
+            color: #999;
+        }
+    }
+    textarea {
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 0 15px;
+        box-sizing: border-box;
+        border: none;
+        resize: none;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            font-family: "Lato Regular", sans-serif;
+            font-size: 13px;
+            color: #999;
+        }
+    }
+    .btn-submit {
+        width: 570px;
+        height: 50px;
+        background-color: $main-color;
+        border-radius: 5px;
+        font-family: "Poppins Semibold", sans-serif;
+        letter-spacing: 2px;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.wr-input {
+    width: 270px;
+    height: 50px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+    &:focus-within {
+        border: solid 2px $main-color;
+    }
+}
+
+.message-box {
+    width: 570px;
+    height: 210px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    &:focus-within {
+        border: solid 2px $main-color;
+    }
+}
+
+.error {
+    font-family: "Lato Regular", sans-serif;
+    font-size: 11px;
+    color: #eb0000;
+    display: none;
+    position: absolute;
+    bottom: -17px;
+}
+
+.show-error .error {
+    display: block;
+}
+
+.show-error {
+    border: 2px solid #eb0000;
+}
+
+.wr-address {
+    iframe {
+        width: 570px;
+        height: 270px;
+        border: none;
+        margin-bottom: 30px;
+    }
+}
+
+.address-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 195px;
+    h6 {
+        font-family: "Poppins Semibold", sans-serif;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    p {
+        font-family: "Poppins Regular", sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 25px;
+        color: #666;
+    }
+    a {
+        font-family: "Poppins Regular", sans-serif;
+        font-size: 12px;
+    }
+    .email-link {
+        margin-bottom: 25px;
+        color: #666;
+    }
+    .tel-link {
+        color: $main-color;
+    }
 }
 
 @media all and (max-width: 1250px) {

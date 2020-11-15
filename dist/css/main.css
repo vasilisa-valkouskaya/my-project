@@ -1463,7 +1463,7 @@ nav button {
 
 .wr-intro p {
   font-size: 14px;
-  color: #99aade;
+  color: #99aff1;
   padding-left: 5px;
 }
 
@@ -1928,7 +1928,7 @@ nav button {
 .headline__text {
   max-width: 410px;
   font-size: 14px;
-  color: #7492ec;
+  color: #99aff1;
   line-height: 24px;
 }
 
@@ -1959,6 +1959,10 @@ nav button {
   display: -ms-flexbox;
   display: flex;
   padding-left: 0;
+  max-width: 470px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -1966,10 +1970,9 @@ nav button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: 29px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .training-info-item__svg {
@@ -1979,6 +1982,7 @@ nav button {
 }
 
 .training-info-item__text {
+  font-family: "Lato Regular", sans-serif;
   font-size: 13px;
   color: #999;
 }
@@ -2046,9 +2050,6 @@ nav button {
 }
 
 .benefit:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
   background-color: #7492ec;
 }
 
@@ -2062,6 +2063,38 @@ nav button {
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.wr-slider {
+  position: relative;
+}
+
+.btn-icon {
+  width: 9px;
+  height: 14px;
+  fill: #7492ec;
+}
+
+.wr-slider__btn-right {
+  position: absolute;
+  top: 20%;
+  right: -3%;
+  cursor: pointer;
+}
+
+.wr-slider__btn-left {
+  position: absolute;
+  top: 20%;
+  left: -3%;
+  cursor: pointer;
+}
+
+.wr-slider__btn-right:active,
+.wr-slider__btn-right:focus,
+.wr-slider__btn-left:active,
+.wr-slider__btn-left:focus {
+  outline: none;
 }
 
 a:hover {
@@ -2069,6 +2102,7 @@ a:hover {
 }
 
 .swiper-slide-detailes__text {
+  font-family: "Lato Regular", sans-serif;
   font-size: 13px;
   color: #999;
 }
@@ -2155,6 +2189,238 @@ a:hover {
   margin-right: 12px;
 }
 
+.wr-contact-intro {
+  background-image: url("../media/img/about-us-background.png");
+  background-position: bottom;
+}
+
+.wr-contact-intro .custom-container {
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+.wr-contact-intro h3 {
+  font-family: "Poppins Light", sans-serif;
+  font-size: 72px;
+  color: #7492ec;
+}
+
+.wr-contact-intro p {
+  max-width: 395px;
+  color: #99aff1;
+  line-height: 24px;
+}
+
+.wr-contact-info .custom-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contact-us-form {
+  max-width: 575px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contact-us-form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 20px 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.contact-us-form input:focus {
+  outline: none;
+}
+
+.contact-us-form input::-webkit-input-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.contact-us-form input::-moz-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.contact-us-form input:-ms-input-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.contact-us-form input::-ms-input-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.contact-us-form input::placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.contact-us-form textarea {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 0 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+}
+
+.contact-us-form textarea:focus {
+  outline: none;
+}
+
+.contact-us-form textarea::-webkit-input-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.contact-us-form textarea::-moz-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.contact-us-form textarea:-ms-input-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.contact-us-form textarea::-ms-input-placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.contact-us-form textarea::placeholder {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
+.contact-us-form .btn-submit {
+  width: 570px;
+  height: 50px;
+  background-color: #7492ec;
+  border-radius: 5px;
+  font-family: "Poppins Semibold", sans-serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.wr-input {
+  width: 270px;
+  height: 50px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.wr-input:focus-within {
+  border: solid 2px #7492ec;
+}
+
+.message-box {
+  width: 570px;
+  height: 210px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.message-box:focus-within {
+  border: solid 2px #7492ec;
+}
+
+.error {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 11px;
+  color: #eb0000;
+  display: none;
+  position: absolute;
+  bottom: -17px;
+}
+
+.show-error .error {
+  display: block;
+}
+
+.show-error {
+  border: 2px solid #eb0000;
+}
+
+.wr-address iframe {
+  width: 570px;
+  height: 270px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.address-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 195px;
+}
+
+.address-text h6 {
+  font-family: "Poppins Semibold", sans-serif;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.address-text p {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.address-text a {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 12px;
+}
+
+.address-text .email-link {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.address-text .tel-link {
+  color: #7492ec;
+}
+
 @media all and (max-width: 1700px) {
   .wr-slogan {
     padding-top: 5vh;
@@ -2162,6 +2428,16 @@ a:hover {
 }
 
 @media all and (max-width: 1250px) {
+  .wr-slider__btn-right {
+    right: 3px;
+    z-index: 10;
+  }
+
+  .wr-slider__btn-left {
+    left: 3px;
+    z-index: 10;
+  }
+
   .wr-access-img {
     grid-gap: 15px;
   }
@@ -2256,6 +2532,22 @@ a:hover {
 @media all and (max-width: 1024px) {
   .wr-about-information .img-container {
     right: 0;
+  }
+
+  .training-info {
+    margin-right: 15px;
+  }
+}
+
+@media all and (max-width: 1020px) {
+  .benefit-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 180px);
+  }
+
+  .benefit {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
 
@@ -2361,6 +2653,37 @@ a:hover {
 }
 
 @media all and (max-width: 900px) {
+  .wr-training-intro__custom-container {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  .wr-training-intro {
+    height: 400px;
+    background-size: cover;
+  }
+
+  .wr-trainig-info__custom-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .training-info {
+    margin: 0;
+    padding: 0;
+  }
+
+  .wr-training-info__video-container {
+    margin-bottom: 20px;
+  }
+
   .wr-renewal .wr-picture {
     display: none;
   }
@@ -2410,36 +2733,13 @@ a:hover {
   .sticky {
     padding: 0 30px;
   }
-}
 
-@media all and (max-width: 850px) {
-  .wr-intro {
-    background-size: cover;
-  }
-
-  .wr-about-information .custom-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-  }
-
-  .wr-about-information .about-description {
-    padding-top: 35px;
-  }
-
-  .wr-about-information .img-container {
-    position: static;
-    height: 100%;
+  .wr-slogan {
+    padding-top: 30vh;
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 853px) {
   header {
     padding: 10px 20px;
     position: fixed;
@@ -2566,10 +2866,39 @@ a:hover {
     top: 0;
   }
 
-  .wr-slogan {
-    padding-top: 30vh;
+  .wr-training-intro__custom-container {
+    padding-top: 20%;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .wr-intro {
+    background-size: cover;
   }
 
+  .wr-about-information .custom-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .wr-about-information .about-description {
+    padding-top: 35px;
+  }
+
+  .wr-about-information .img-container {
+    position: static;
+    height: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
   .wr-training-types .custom-container {
     padding-bottom: 20px;
   }
@@ -2585,6 +2914,10 @@ a:hover {
 
   .wr-promo-access .custom-container {
     padding-top: 60px;
+  }
+
+  .benefit {
+    max-width: 100%;
   }
 
   .wr-teacher-introduction .custom-container {
@@ -2617,6 +2950,12 @@ a:hover {
 
   .mobile-menu li {
     margin-bottom: 15px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .wr-training-intro {
+    height: 320px;
   }
 }
 
@@ -2714,6 +3053,36 @@ a:hover {
   }
 }
 
+@media all and (max-width: 570px) {
+  .wr-training-intro__custom-container {
+    padding-top: 25%;
+  }
+
+  .headline__heading {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .wr-trainig-benefits__custom-container {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .wr-trainig-benefits__title,
+  .wr-related__title {
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+
+  .benefit-box {
+    gap: 20px;
+  }
+
+  .wr-related__custom-container {
+    padding-bottom: 10px;
+  }
+}
+
 @media all and (max-width: 569px) {
   .wr-contact-form input {
     padding-left: 10px;
@@ -2766,9 +3135,33 @@ a:hover {
   }
 }
 
+@media all and (max-width: 540px) {
+  .wr-training-intro {
+    height: 280px;
+  }
+}
+
 @media all and (max-width: 500px) {
   .wr-slogan h2 {
     font-size: 30px;
+  }
+
+  .wr-trainig-info__custom-container {
+    padding-top: 40px;
+  }
+}
+
+@media all and (max-width: 485px) {
+  .wr-training-intro__custom-container {
+    padding-top: 30%;
+  }
+
+  .headline__heading {
+    font-size: 20px;
+  }
+
+  .headline__text {
+    font-size: 12px;
   }
 }
 
@@ -2823,6 +3216,17 @@ a:hover {
   }
 }
 
+@media all and (max-width: 425px) {
+  .training-info-item__svg {
+    height: 11px;
+    margin-right: 7px;
+  }
+
+  .training-info-item__text {
+    font-size: 11px;
+  }
+}
+
 @media all and (max-width: 413px) {
   .wr-description h1 {
     font-size: 36px;
@@ -2866,6 +3270,15 @@ a:hover {
 
   .wr-features .counter-box p {
     font-size: 8px;
+  }
+
+  .training-info-item__svg {
+    height: 10px;
+    margin-right: 5px;
+  }
+
+  .training-info-item__text {
+    font-size: 10px;
   }
 }
 
