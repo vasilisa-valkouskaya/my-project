@@ -2190,12 +2190,12 @@ a:hover {
 }
 
 .wr-contact-intro {
-  background-image: url("../media/img/about-us-background.png");
-  background-position: bottom;
+  background: url("../media/img/about-us-background.png") bottom;
+  position: relative;
 }
 
 .wr-contact-intro .custom-container {
-  padding-top: 100px;
+  padding-top: 137px;
   padding-bottom: 75px;
 }
 
@@ -2203,12 +2203,23 @@ a:hover {
   font-family: "Poppins Light", sans-serif;
   font-size: 72px;
   color: #7492ec;
+  margin-bottom: 6px;
 }
 
 .wr-contact-intro p {
   max-width: 395px;
   color: #99aff1;
+  font-size: 14px;
   line-height: 24px;
+}
+
+.wr-contact-intro .wr-contact-img {
+  width: 100%;
+  height: 770px;
+  position: absolute;
+  top: 26%;
+  background: url("../media/img/contact-flower.png") no-repeat 108%;
+  z-index: -5;
 }
 
 .wr-contact-info .custom-container {
@@ -2223,7 +2234,7 @@ a:hover {
 }
 
 .contact-us-form {
-  max-width: 575px;
+  max-width: 570px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2322,20 +2333,20 @@ a:hover {
 }
 
 .contact-us-form .btn-submit {
-  width: 570px;
+  width: 100%;
   height: 50px;
   background-color: #7492ec;
   border-radius: 5px;
   font-family: "Poppins Semibold", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
 }
 
 .wr-input {
-  width: 270px;
-  height: 50px;
+  width: 268px;
+  height: 47px;
   border: 1px solid #eee;
   border-radius: 5px;
   margin-bottom: 30px;
@@ -2347,11 +2358,10 @@ a:hover {
 }
 
 .message-box {
-  width: 570px;
-  height: 210px;
+  width: 100%;
+  height: 207px;
   border: 1px solid #eee;
   border-radius: 5px;
-  margin-bottom: 30px;
 }
 
 .message-box:focus-within {
@@ -2379,7 +2389,7 @@ a:hover {
   width: 570px;
   height: 270px;
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .address-text {
@@ -2396,14 +2406,14 @@ a:hover {
 .address-text h6 {
   font-family: "Poppins Semibold", sans-serif;
   font-size: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .address-text p {
   font-family: "Poppins Regular", sans-serif;
   font-size: 12px;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   color: #666;
 }
 
@@ -2413,12 +2423,54 @@ a:hover {
 }
 
 .address-text .email-link {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   color: #666;
 }
 
 .address-text .tel-link {
   color: #7492ec;
+}
+
+.wr-error {
+  height: 100vh;
+  background-image: url(../media/img/404.png);
+  background-size: 63%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.wr-error a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Poppins Semibold", sans-serif;
+  color: #99aade;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.wr-error a svg {
+  position: absolute;
+  left: -30px;
+  height: 20px;
+  width: 20px;
+  fill: #99aade;
+}
+
+.wr-error a:hover {
+  color: #7492ec;
+}
+
+.wr-error a:hover svg {
+  fill: #7492ec;
 }
 
 @media all and (max-width: 1700px) {
@@ -2472,6 +2524,36 @@ a:hover {
   .wr-access-img .img-container:nth-child(5) {
     grid-row: 2;
     grid-column: 2;
+  }
+}
+
+@media all and (max-width: 1180px) {
+  .wr-contact-intro {
+    background-size: cover;
+  }
+
+  .wr-contact-intro .custom-container {
+    padding-top: 70px;
+  }
+
+  .contact-us-form {
+    margin-right: 15px;
+  }
+
+  .wr-input {
+    width: 47%;
+  }
+
+  .message-box {
+    width: 100%;
+  }
+
+  .wr-address {
+    min-width: 40%;
+  }
+
+  .wr-address iframe {
+    width: 100%;
   }
 }
 
@@ -2554,6 +2636,13 @@ a:hover {
 @media all and (max-width: 1005px) {
   .wr-subscribe .wr-logo {
     padding-right: 15px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .wr-contact-intro .wr-contact-img {
+    background-position: top center;
+    background-size: contain;
   }
 }
 
@@ -2736,6 +2825,19 @@ a:hover {
 
   .wr-slogan {
     padding-top: 30vh;
+  }
+
+  .wr-contact-intro .custom-container {
+    padding-top: 90px;
+  }
+
+  .wr-contact-intro h3 {
+    font-size: 55px;
+  }
+
+  .wr-contact-info .custom-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -2935,6 +3037,26 @@ a:hover {
   }
 }
 
+@media all and (max-width: 767px) {
+  .wr-contact-info .custom-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contact-us-form {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .wr-contact-intro .wr-contact-img {
+    top: 55%;
+  }
+}
+
 @media all and (max-width: 736px) and (orientation: landscape) {
   .mobile-menu ul {
     padding-top: 65px;
@@ -2991,6 +3113,10 @@ a:hover {
 }
 
 @media all and (max-width: 640px) {
+  .wr-contact-intro h3 {
+    text-align: left;
+  }
+
   h3 {
     text-align: center;
   }
@@ -3129,6 +3255,12 @@ a:hover {
   }
 }
 
+@media all and (max-width: 550px) {
+  .wr-contact-intro .wr-contact-img {
+    top: 65%;
+  }
+}
+
 @media all and (max-width: 545px) {
   .wr-intro h3 {
     font-size: 40px;
@@ -3138,6 +3270,22 @@ a:hover {
 @media all and (max-width: 540px) {
   .wr-training-intro {
     height: 280px;
+  }
+}
+
+@media all and (max-width: 530px) {
+  .wr-contact-info .custom-container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .contact-us-form {
+    margin-bottom: 40px;
+  }
+
+  .wr-input {
+    margin-bottom: 15px;
+    width: 100%;
   }
 }
 
@@ -3178,6 +3326,17 @@ a:hover {
 @media all and (max-width: 480px) {
   .wr-about-information .about-description {
     width: 100%;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .wr-contact-intro h3 {
+    font-size: 45px;
+  }
+
+  .wr-contact-intro p {
+    max-width: 255px;
+    font-size: 12px;
   }
 }
 
