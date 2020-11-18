@@ -1,3 +1,5 @@
+// form validation 
+
 let btnSubmit = document.querySelector('.btn-submit');
 let form = document.querySelector('.contact-us-form');
 let container = document.querySelector('.wr-input');
