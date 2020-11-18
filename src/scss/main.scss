@@ -1853,11 +1853,11 @@ a:hover {
         top: 20%;
         left: 50%;
         transform: translatex(-50%);
-        width: 26%;
-        height: 60%;
+        width: 350px;
+        height: 380px;
         background-color: #f1f3f8;
         border-radius: 25px;
-        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .6);
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .4);
         @media all and (max-width: 1200px) {
             width: 350px;
             height: 400px;
@@ -1899,8 +1899,8 @@ a:hover {
         }
         button {
             font-family: "Lato Regular", sans-serif;
-            width: 20%;
-            height: 8%;
+            width: 66px;
+            height: 28px;
             border-radius: 5px;
             background-color: $main-color;
             position: absolute;
