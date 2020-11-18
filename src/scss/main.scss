@@ -25,7 +25,7 @@
             height: 40%;
             position: absolute;
             border-radius: 50%;
-            animation: spin 2s ease infinite;
+            animation: spin 2s infinite;
             &:first-child {
                 background: #7492ec;
                 animation-delay: -1.5s;
@@ -48,16 +48,16 @@
 @keyframes spin {
     0%,
     100% {
-        transform: translate(0)
+        transform: translate(0%)
     }
     25% {
-        transform: translate(160%)
+        transform: translate(150%)
     }
     50% {
-        transform: translate(160%, 160%)
+        transform: translate(150%, 150%)
     }
     75% {
-        transform: translate(0, 160%)
+        transform: translate(0%, 150%)
     }
 }
 
@@ -1833,6 +1833,9 @@ a:hover {
         &:hover svg {
             fill: $main-color;
         }
+        @media all and (max-width: 500px) {
+            bottom: 30%;
+        }
     }
 }
 
@@ -1855,6 +1858,18 @@ a:hover {
         background-color: #f1f3f8;
         border-radius: 25px;
         box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .6);
+        @media all and (max-width: 1200px) {
+            width: 350px;
+            height: 400px;
+        }
+        @media all and (max-width: 420px) {
+            width: 320px;
+            height: 380px;
+        }
+        @media all and (max-width: 380px) {
+            width: 290px;
+            height: 350px;
+        }
         h5 {
             width: 100%;
             text-align: center;
@@ -1866,6 +1881,9 @@ a:hover {
             top: 20%;
             left: 50%;
             transform: translateX(-50%);
+            @media all and (max-width: 380px) {
+                font-size: 18px;
+            }
         }
         span {
             position: absolute;
@@ -1906,6 +1924,10 @@ a:hover {
             line-height: 26px;
             font-size: 19px;
             width: 75%;
+            @media all and (max-width: 380px) {
+                top: 30%;
+                font-size: 16px;
+            }
             a {
                 color: $main-color;
                 font-weight: 600;

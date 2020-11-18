@@ -754,8 +754,8 @@ nav button {
   height: 40%;
   position: absolute;
   border-radius: 50%;
-  -webkit-animation: spin 2s ease infinite;
-  animation: spin 2s ease infinite;
+  -webkit-animation: spin 2s infinite;
+  animation: spin 2s infinite;
 }
 
 .preloader__body span:first-child {
@@ -782,45 +782,45 @@ nav button {
 
 @-webkit-keyframes spin {
   0%, 100% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
+    -webkit-transform: translate(0%);
+    transform: translate(0%);
   }
 
   25% {
-    -webkit-transform: translate(160%);
-    transform: translate(160%);
+    -webkit-transform: translate(150%);
+    transform: translate(150%);
   }
 
   50% {
-    -webkit-transform: translate(160%, 160%);
-    transform: translate(160%, 160%);
+    -webkit-transform: translate(150%, 150%);
+    transform: translate(150%, 150%);
   }
 
   75% {
-    -webkit-transform: translate(0, 160%);
-    transform: translate(0, 160%);
+    -webkit-transform: translate(0%, 150%);
+    transform: translate(0%, 150%);
   }
 }
 
 @keyframes spin {
   0%, 100% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
+    -webkit-transform: translate(0%);
+    transform: translate(0%);
   }
 
   25% {
-    -webkit-transform: translate(160%);
-    transform: translate(160%);
+    -webkit-transform: translate(150%);
+    transform: translate(150%);
   }
 
   50% {
-    -webkit-transform: translate(160%, 160%);
-    transform: translate(160%, 160%);
+    -webkit-transform: translate(150%, 150%);
+    transform: translate(150%, 150%);
   }
 
   75% {
-    -webkit-transform: translate(0, 160%);
-    transform: translate(0, 160%);
+    -webkit-transform: translate(0%, 150%);
+    transform: translate(0%, 150%);
   }
 }
 
@@ -2723,6 +2723,11 @@ a:hover {
   .wr-slogan h2 {
     font-size: 48px;
   }
+
+  .modal-container .modal-item {
+    width: 350px;
+    height: 400px;
+  }
 }
 
 @media all and (max-width: 1190px) {
@@ -3507,6 +3512,10 @@ a:hover {
   .wr-trainig-info__custom-container {
     padding-top: 40px;
   }
+
+  .wr-error a {
+    bottom: 30%;
+  }
 }
 
 @media all and (max-width: 485px) {
@@ -3596,9 +3605,32 @@ a:hover {
   }
 }
 
+@media all and (max-width: 420px) {
+  .modal-container .modal-item {
+    width: 320px;
+    height: 380px;
+  }
+}
+
 @media all and (max-width: 413px) {
   .wr-description h1 {
     font-size: 36px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .modal-container .modal-item {
+    width: 290px;
+    height: 350px;
+  }
+
+  .modal-container .modal-item h5 {
+    font-size: 18px;
+  }
+
+  .modal-container .modal-item p {
+    top: 30%;
+    font-size: 16px;
   }
 }
 
