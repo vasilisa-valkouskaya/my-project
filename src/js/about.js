@@ -2,6 +2,10 @@
 const swiper = new Swiper('.swiper-container', {
     spaceBetween: 5,
     loop: true,
+    speed: 1500,
+    autoplay: {
+        delay: 6000,
+    },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,

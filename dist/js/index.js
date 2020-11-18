@@ -4,6 +4,10 @@ const galleryTop = new Swiper('.gallery-top', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    speed: 1000,
+    autoplay: {
+        delay: 6000,
+    },
 
     navigation: {
         nextEl: '.swiper-button-right',

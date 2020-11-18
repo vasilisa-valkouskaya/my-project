@@ -31,7 +31,6 @@ btnBurger.addEventListener('click', function() {
 // modal window
 
 let btnOpenModal = document.querySelectorAll('.promo-btn');
-
 let modalCont = document.querySelector('.modal-container');
 
 
@@ -46,7 +45,8 @@ for (let i = 0; i < btnOpenModal.length; i++) {
     btnOpenModal[i].addEventListener('click', function() {
         let html = document.documentElement.clientWidth;
         let bodyPadding = window.innerWidth - html;
-
+        document.querySelector('.mobile-menu').classList.remove('show');
+        btnBurger.classList.remove('active');
         modalCont.classList.add('show-modal');
         body.classList.add('overflow');
         body.style.paddingRight = bodyPadding + 'px';

@@ -87,6 +87,10 @@ const slider = new Swiper('.wr-related__swiper-container', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    speed: 1000,
+    autoplay: {
+        delay: 6000,
+    },
 
     navigation: {
         nextEl: '.wr-slider__btn-right',
